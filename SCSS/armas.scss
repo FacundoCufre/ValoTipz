@@ -1,0 +1,116 @@
+@import "SCSSparciales/headerMenu";
+
+.armas{
+    .armas__section{
+        padding: 0;
+        margin: 0;
+        height: 1500px;
+        width: 100%
+    }
+    .armas__h2{
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        color: $blanco;
+        background-color: black;
+    }
+    .armas__div{                      
+        height: 180px;
+        background-color: $rojoFuerte;
+        padding:0;
+        margin: 0;
+        font-size: 0;
+        border: 2px solid $blanco;
+    }
+}
+.classic{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/classic.jpeg);
+    
+}
+.shorty{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/shorty.jpeg)
+}
+.frenzy{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/frenzy.jpeg)
+}
+.ghost{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/ghost.jpeg)
+}
+.sheriff{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/sheriff.jpeg)
+}
+.stinger{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/stinger.jpeg)
+}
+.spectre{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/spectre.jpeg)
+}
+.bucky{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/bucky.jpeg)
+}
+.judge{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/judge.jpeg)
+}
+.bulldog{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/bulldog.jpeg)
+}
+.guardian{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/guardian.jpeg)
+}
+.phantom{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/phantom.jpeg)
+}
+.vandal{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/vandal.jpeg)
+}
+.marshal{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/marshal.jpeg)
+}
+.operator{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/operator.jpeg)
+}
+.ares{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/ares.jpeg)
+}
+.odin{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/odin.jpeg)
+}
+.melee{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Multimedia/armas/melee.jpeg)
+}

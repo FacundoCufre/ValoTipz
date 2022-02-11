@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$rojoClaro:#bb3732;
+$rosita: #c06c69;
+$rojoFuerte:#981914;
+$blanco:rgb(246, 247, 248);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.encabezado {
+    height: 120px;
+    background-color: $rojoFuerte;
+    margin: 0;
+
+    .encabezado__h1 {
+        margin-left: 30px;
+        text-align: left;
+        line-height: 100px;
+        font-family: "Battambang";
+        font-size: 50px;
+        color: black;
+        text-shadow: 0 0 5px $blanco,
+        0 0 10px $blanco,
+        0 0 20px $blanco,;
+    }
+    .encabezado__breadcrumb {
+        line-height: 100px;
+        background-color: $rojoFuerte;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media only screen and (min-width: 768px){
+    #barra-busq {
+        margin: 0;
+        z-index: 1;
+        a {
+            z-index: 1;
+            color: $blanco;
+            background: $rojoFuerte;
+            height: 64px;
+            font-family: lato;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        a:hover {   
+            background: #1a1919;
+        } 
+        ul {
+            list-style: none;
+            display: flex;
+            z-index: 2;
+        }
+        li {
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        li:hover .submenu > li {
+            display: block;
+            flex-direction: column;
+            top: 0px;
+        }
+    }
+    .submenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        li {
+            display: none;
+            position: absolute;
+            top: 0px;
+            position: relative;
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    #barra-busq{
+        z-index: 1;
+        a {
+            color: $blanco;
+            background: $rojoFuerte;
+            height: 64px;
+            font-family: lato;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        a:hover {   
+            background: #1a1919;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        li {
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+    }
+    .submenu{
+        display: none;
+        li{
+            display: none;
+        }
+    }
+}

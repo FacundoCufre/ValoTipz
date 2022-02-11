@@ -1,0 +1,53 @@
+$rojoClaro:rgb(187, 55, 50);
+$rosita: #c06c69;
+$rojoFuerte:#981914;
+$blanco:rgb(246, 247, 248);
+
+body{
+    background-color: $blanco;
+}
+.error{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .error__div{
+        width: 40%;
+        height: 400px;
+        border: $rojoFuerte solid 2px;
+        border-radius: 20px;
+        background-color: $blanco;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .error__section{
+            width: 80%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center; 
+        }
+        .error__h1{
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-size: 40px;
+            text-align: 140px;
+        }
+        .error__div--logo{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .error__span{
+            width: 100%;
+            height: 100%;
+            color: $rojoClaro;
+            font-size: 40px;
+        }
+    }
+}

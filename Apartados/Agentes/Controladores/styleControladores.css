@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.encabezado {
+  height: 120px;
+  background-color: #981914;
+  margin: 0;
+}
+.encabezado .encabezado__h1 {
+  margin-left: 30px;
+  text-align: left;
+  line-height: 100px;
+  font-family: "Battambang";
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 0 5px #f6f7f8, 0 0 10px #f6f7f8, 0 0 20px #f6f7f8;
+}
+.encabezado .encabezado__breadcrumb {
+  line-height: 100px;
+  background-color: #981914;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #barra-busq {
+    margin: 0;
+    z-index: 1;
+  }
+  #barra-busq a {
+    color: #f6f7f8;
+    background: #981914;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  #barra-busq a:hover {
+    background: #1a1919;
+  }
+  #barra-busq ul {
+    list-style: none;
+    display: flex;
+    z-index: 1;
+  }
+  #barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  #barra-busq li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  }
+  .submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #barra-busq {
+    z-index: 1;
+  }
+  #barra-busq a {
+    color: #f6f7f8;
+    background: #981914;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  #barra-busq a:hover {
+    background: #1a1919;
+  }
+  #barra-busq ul {
+    list-style: none;
+    display: flex;
+  }
+  #barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .submenu {
+    display: none;
+  }
+  .submenu li {
+    display: none;
+  }
+}
+.expl {
+  width: 100%;
+  height: 340px;
+  color: #f6f7f8;
+  font-size: 30px;
+  background-color: black;
+  line-height: 60px;
+  text-align: center;
+  border: solid 15px #bb3732;
+  border-bottom: solid 15px #981914;
+  padding: 0;
+  margin: 0;
+}
+.expl .expl__span {
+  text-align: center;
+  font-size: 40px;
+  display: block;
+  line-height: 100px;
+}
+
+.agentes {
+  display: grid;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  grid-template-rows: 500px 500px;
+  grid-template-columns: 600px 600px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #981914;
+}
+.agentes .agentes__div {
+  background-color: blueviolet;
+  height: 450px;
+  width: 337px;
+  font-size: 0;
+  transition: all 0.9s;
+}
+.agentes .agentes__div:hover {
+  width: 400px;
+  height: 520px;
+}
+
+.astra {
+  background-image: url(../../../Multimedia/astra1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.brimstone {
+  background-image: url(../../../Multimedia/brimstone1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.omen {
+  background-image: url(../../../Multimedia/omen1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.viper {
+  background-image: url(../../../Multimedia/viper1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=styleControladores.css.map */

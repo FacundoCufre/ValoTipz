@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.encabezado {
+  height: 120px;
+  background-color: #981914;
+  margin: 0;
+}
+.encabezado .encabezado__h1 {
+  margin-left: 30px;
+  text-align: left;
+  line-height: 100px;
+  font-family: "Battambang";
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 0 5px #f6f7f8, 0 0 10px #f6f7f8, 0 0 20px #f6f7f8;
+}
+.encabezado .encabezado__breadcrumb {
+  line-height: 100px;
+  background-color: #981914;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #barra-busq {
+    margin: 0;
+    z-index: 1;
+  }
+  #barra-busq a {
+    z-index: 1;
+    color: #f6f7f8;
+    background: #981914;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  #barra-busq a:hover {
+    background: #1a1919;
+  }
+  #barra-busq ul {
+    list-style: none;
+    display: flex;
+    z-index: 2;
+  }
+  #barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  #barra-busq li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  }
+  .submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #barra-busq {
+    z-index: 1;
+  }
+  #barra-busq a {
+    color: #f6f7f8;
+    background: #981914;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  #barra-busq a:hover {
+    background: #1a1919;
+  }
+  #barra-busq ul {
+    list-style: none;
+    display: flex;
+  }
+  #barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .submenu {
+    display: none;
+  }
+  .submenu li {
+    display: none;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .fondoHeader {
+    background-image: url(../Multimedia/fondoHeader600.png);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .fondoHeader {
+    background-image: url(../Multimedia/fondoHeader350.jpg);
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .fondoHeader {
+    display: none;
+  }
+}
+body {
+  background-color: #f6f7f8;
+}
+
+.carrusel {
+  background-color: #bb3732;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 10px #bb3732 solid;
+  border-top: 1px #f6f7f8 solid;
+  z-index: 3;
+}
+.carrusel .carousel-inner img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.carrusel .carousel-indicators {
+  margin-bottom: 0;
+  z-index: 1;
+}
+.carrusel .carousel-indicators li {
+  height: 3px;
+  width: 70px;
+  border-radius: 11px;
+}
+.carrusel .carousel-caption {
+  z-index: 1;
+  padding: 0;
+}
+.carrusel .carousel-caption .carrusel__h2 {
+  z-index: 1;
+  margin: 0;
+  color: #f6f7f8;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black, 0 0 1em #981914, 0 0 2em #981914, 0 0 0.2em #981914;
+}
+.carrusel .carousel-caption .carrusel__p {
+  z-index: 1;
+  font-size: 15;
+  margin: 0;
+  color: black;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #bb3732, 0 0 80px #bb3732, 0 0 90px #bb3732, 0 0 100px #bb3732, 0 0 150px #bb3732;
+}
+
+.expl {
+  width: 100%;
+  height: 300px;
+  background-color: #981914;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.expl .expl--redes {
+  width: 10%;
+  background-color: #f6f7f8;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  border-bottom: 10px #bb3732 solid;
+}
+.expl .expl--redes .red {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expl .expl__p {
+  width: 80%;
+  height: 100%;
+  background-color: #bb3732;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+  color: #f6f7f8;
+}
+
+.links {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #981914;
+  padding-top: 40px;
+}
+
+.div1 {
+  border: 3px #981914 solid;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 500px;
+  margin: 20px;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.div2 {
+  border: 3px #981914 solid;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 500px;
+  margin: 20px;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.div3 {
+  border: 3px #981914 solid;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 500px;
+  margin: 20px;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.izq {
+  background-image: url(../../Multimedia/izq.svg);
+}
+
+.der {
+  background-image: url(../../Multimedia/der.svg);
+}
+
+.mensaje {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 25px;
+  font-family: "Lora", serif;
+  color: black;
+  text-shadow: 0 0 2px #f6f7f8, 0 0 4px #f6f7f8;
+}
+
+.boton {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
+.boton .btn {
+  appearance: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 70%;
+  will-change: transform;
+}
+.boton .btn:disabled {
+  pointer-events: none;
+}
+.boton .btn:hover {
+  box-shadow: #c06c69 0 8px 15px;
+  transform: translateY(-2px);
+}
+.boton .btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.boton--valorant {
+  background-color: #981914;
+}
+
+.boton--valorant:hover {
+  border: 2px solid #981914;
+  color: #981914;
+}
+
+.boton--agentes {
+  background-color: #f6f7f8;
+}
+
+.boton--agentes:hover {
+  border: 2px solid #981914;
+  color: #f6f7f8;
+}
+
+.boton--historia {
+  background-color: #981914;
+}
+
+.boton--historia:hover {
+  border: 2px solid #981914;
+  color: #981914;
+}
+
+.boton--valorant {
+  border: 2px solid #f6f7f8;
+  color: #f6f7f8;
+}
+
+.boton--valorant:hover {
+  background-color: #f6f7f8;
+}
+
+.boton--agentes {
+  border: 2px solid #981914;
+  color: #981914;
+}
+
+.boton--agentes:hover {
+  background-color: #981914;
+}
+
+.boton--historia {
+  border: 2px solid #f6f7f8;
+  color: #f6f7f8;
+}
+
+.boton--historia:hover {
+  background-color: #f6f7f8;
+}
+
+.imagen {
+  width: 40%;
+}
+
+.image1 {
+  background-image: url(../../Multimedia/imagenIndex1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.image2 {
+  background-image: url(../../Multimedia/imagenIndex2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.image3 {
+  background-image: url(../../Multimedia/imagenIndex3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=styleIndex.css.map */

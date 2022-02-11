@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.encabezado {
+  height: 120px;
+  background-color: #981914;
+  margin: 0;
+}
+.encabezado .encabezado__h1 {
+  margin-left: 30px;
+  text-align: left;
+  line-height: 100px;
+  font-family: "Battambang";
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 0 5px #f6f7f8, 0 0 10px #f6f7f8, 0 0 20px #f6f7f8;
+}
+.encabezado .encabezado__breadcrumb {
+  line-height: 100px;
+  background-color: #981914;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #barra-busq {
+    margin: 0;
+    z-index: 1;
+  }
+  #barra-busq a {
+    color: #f6f7f8;
+    background: #981914;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  #barra-busq a:hover {
+    background: #1a1919;
+  }
+  #barra-busq ul {
+    list-style: none;
+    display: flex;
+    z-index: 1;
+  }
+  #barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  #barra-busq li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  }
+  .submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #barra-busq {
+    z-index: 1;
+  }
+  #barra-busq a {
+    color: #f6f7f8;
+    background: #981914;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  #barra-busq a:hover {
+    background: #1a1919;
+  }
+  #barra-busq ul {
+    list-style: none;
+    display: flex;
+  }
+  #barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .submenu {
+    display: none;
+  }
+  .submenu li {
+    display: none;
+  }
+}
+body {
+  background-color: #f6f7f8;
+}
+
+.fondo {
+  height: auto;
+  width: 100%;
+  background-image: url(../Multimedia/fondoContacto.svg);
+}
+
+.radial {
+  /*OPCIONES (RADIAL)*/
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.radial .radial__titulo {
+  width: 700px;
+  height: 500px;
+  background-color: #f6f7f8;
+  border: 3px solid #981914;
+  border-radius: 20px;
+}
+.radial .radial__titulo section {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  line-height: 120px;
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.radial .radial__titulo .radial__div {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radial .radial__titulo .radial__div .radial__form {
+  font-size: 25px;
+  color: black;
+}
+.radial .radial__titulo .radial__div .radial__form input[type=radio] {
+  display: none;
+}
+.radial .radial__titulo .radial__div .radial__form label {
+  display: block;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.radial .radial__titulo .radial__div .radial__form label span {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+  border-radius: 31px;
+  transition: 0.25s ease;
+}
+.radial .radial__titulo .radial__div .radial__form label span:hover,
+.radial .radial__titulo .radial__div .radial__form input[type=radio]:checked + span {
+  background-color: #c06c69;
+  color: #981914;
+}
+.radial .radial__titulo .radial__div .radial__form label span:before {
+  content: "";
+  background-color: #f6f7f8;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 2px #981914;
+}
+.radial .radial__titulo .radial__div .radial__form input[type=radio]:checked + span:before {
+  box-shadow: inset 0 0 0 10px #981914;
+}
+
+.contacto {
+  /*INFO DE CONTACTO*/
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.contacto .contacto__titulo {
+  height: 500px;
+  width: 500px;
+  background-color: #f6f7f8;
+  border: 3px solid #981914;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+.contacto .contacto__titulo section {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contacto .contacto__titulo .contacto__div {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto .contacto__titulo .contacto__div .mensaje {
+  border-radius: 10px;
+  border-color: #bb3732;
+  padding: 8px;
+  background-color: #f6f7f8;
+}
+.contacto .contacto__titulo .contacto__div textarea:focus, .contacto .contacto__titulo .contacto__div .mensaje:focus, .contacto .contacto__titulo .contacto__div .mensaje[type]:focus {
+  border-color: #981914;
+  box-shadow: 0 1px 2px #c06c69 inset, 0 0 8px #bb3732;
+  outline: 0 none;
+  background-color: white;
+}
+
+.group {
+  /*ANIMACION CONTACTO*/
+  position: relative;
+  margin-bottom: 45px;
+  /* ANIMATIONS ================ */
+}
+.group .usuario {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #c06c69;
+  background-color: #f6f7f8;
+  height: 60px;
+}
+.group .usuario:focus {
+  outline: none;
+}
+.group .usser {
+  color: black;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.group .usuario:focus ~ .usser, .group input:valid ~ .usser {
+  top: -20px;
+  font-size: 14px;
+  color: #981914;
+}
+.group .bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+.group .bar:before, .group .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #981914;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.group .bar:before {
+  left: 50%;
+}
+.group .bar:after {
+  right: 50%;
+}
+.group .usuario:focus ~ .bar:before, .group .usuario:focus ~ .bar:after {
+  width: 50%;
+}
+.group .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.group .usuario:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #981914;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #981914;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #981914;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.finalizar {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  /*ANIMACION FINALIZAR*/
+}
+.finalizar .finalizar__div {
+  width: 1000px;
+  background-color: #f6f7f8;
+  border: 3px solid #981914;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.finalizar .finalizar__div .finalizar__div__boton {
+  /*FIN (ENV O ELIM)*/
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.finalizar .btn {
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
+}
+.finalizar .boton {
+  color: black;
+}
+.finalizar .boton::after, .finalizar .boton::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+.finalizar .boton::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #981914;
+  border-right-color: #981914;
+}
+.finalizar .boton::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #bb3732;
+  border-left-color: #bb3732;
+}
+.finalizar .boton:hover:after, .finalizar .boton:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=contacto.css.map */

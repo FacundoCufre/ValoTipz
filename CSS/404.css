@@ -1,0 +1,51 @@
+body {
+  background-color: #f6f7f8;
+}
+
+.error {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error .error__div {
+  width: 40%;
+  height: 400px;
+  border: #981914 solid 2px;
+  border-radius: 20px;
+  background-color: #f6f7f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error .error__div .error__section {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.error .error__div .error__h1 {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 40px;
+  text-align: 140px;
+}
+.error .error__div .error__div--logo {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.error .error__div .error__span {
+  width: 100%;
+  height: 100%;
+  color: #bb3732;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=404.css.map */

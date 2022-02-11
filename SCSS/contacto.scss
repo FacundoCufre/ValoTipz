@@ -1,0 +1,289 @@
+@import "SCSSparciales/headerMenu";
+
+$big: 1000px;
+$medium: 700px;
+$small: 500px;
+$smaller: 100px;
+body{
+    background-color: $blanco;
+}
+.fondo{
+    height: auto;
+    width: 100%;
+    background-image: url(../Multimedia/fondoContacto.svg);
+}
+.radial{                     /*OPCIONES (RADIAL)*/
+    width: 100%;
+    height: ($medium) - ($smaller);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .radial__titulo{
+        width: $medium;
+        height: $small;
+        background-color: $blanco; 
+        border: 3px solid $rojoFuerte;
+        border-radius: 20px;
+        section{
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            line-height: 120px;
+            font-size: 35px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .radial__div{
+            width: 100%;
+            height: 80%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .radial__form{
+                font-size: 25px;
+                color: black;
+                input[type="radio"]{
+                display: none;
+                }
+                label{
+                    display: block;
+                    cursor: pointer;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                label span{
+                    display: inline-flex;
+                align-items: center;
+                    padding: 10px 20px 10px 10px;
+                    border-radius: 31px;
+                    transition: .25s ease;
+                }
+                label span:hover,
+                input[type="radio"]:checked + span{
+                    background-color: $rosita;
+                    color: $rojoFuerte;
+                }
+                label span:before{
+                    content: "";
+                    background-color: $blanco;
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    transition: .25s ease;
+                    box-shadow:  inset 0 0 0 2px $rojoFuerte;
+                }
+                input[type="radio"]:checked + span:before{
+                    box-shadow: inset 0 0 0 10px $rojoFuerte;
+                }
+            }   
+        }
+    } 
+}
+.contacto{                     /*INFO DE CONTACTO*/
+    height:($medium) - ($smaller);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    .contacto__titulo{
+        height: $small;
+        width: $small;
+        background-color: $blanco;
+        border: 3px solid $rojoFuerte;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+        section{
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .contacto__div{
+            width: 100%;
+            height: 80%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .mensaje{
+                border-radius: 10px;
+                border-color: $rojoClaro;
+                padding: 8px;
+                background-color: $blanco;
+            }
+            textarea:focus, .mensaje:focus, .mensaje[type]:focus {
+                border-color: $rojoFuerte;
+                box-shadow: 0 1px 2px $rosita inset, 0 0 8px $rojoClaro;
+                outline: 0 none;
+                background-color: white;
+            }
+        }
+    }
+}
+.group{                     /*ANIMACION CONTACTO*/
+    position: relative; 
+    margin-bottom: 45px; 
+    .usuario{
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid $rosita;
+        background-color: $blanco;
+        height: 60px;
+    }
+    .usuario:focus{
+        outline: none;
+    }
+    .usser{
+        color: black; 
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all; 
+        -moz-transition: 0.2s ease all; 
+        -webkit-transition: 0.2s ease all;
+    }
+    .usuario:focus ~ .usser, input:valid ~ .usser{
+        top: -20px;
+        font-size: 14px;
+        color: $rojoFuerte;
+    }
+    .bar{
+        position:relative;
+        display:block;
+        width:300px;
+    }
+    .bar:before, .bar:after{
+        content: '';
+        height: 2px; 
+        width: 0;
+        bottom: 1px; 
+        position: absolute;
+        background: $rojoFuerte; 
+        transition: 0.2s ease all; 
+        -moz-transition: 0.2s ease all; 
+        -webkit-transition: 0.2s ease all;
+    }
+    .bar:before{
+        left: 50%;
+    }
+    .bar:after{
+        right: 50%; 
+    }
+    .usuario:focus ~ .bar:before, .usuario:focus ~ .bar:after{
+        width:50%;
+    }
+    .highlight {
+        position:absolute;
+        height:60%; 
+        width:100px; 
+        top:25%; 
+        left:0;
+        pointer-events:none;
+        opacity:0.5;
+    }
+    .usuario:focus ~ .highlight{
+        -webkit-animation:inputHighlighter 0.3s ease;
+        -moz-animation:inputHighlighter 0.3s ease;
+        animation:inputHighlighter 0.3s ease;
+    }
+    /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background: $rojoFuerte; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background: $rojoFuerte; }
+    to 	{ width:0; background: transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background: $rojoFuerte; }
+    to 	{ width:0; background: transparent; }
+  }
+}
+
+@mixin botones ($width, $flex, $centro){            /*FIN (ENV O ELIM)*/
+    width: $width;
+    display: $flex;
+    justify-content: $centro;
+    align-items: $centro;
+}
+.finalizar{                     
+    width: 100%;
+    height: ($small/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    .finalizar__div{
+        width: $big;
+        background-color: $blanco;
+        border: 3px solid $rojoFuerte;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .finalizar__div__boton{
+           @include botones(50%, flex, center)
+        }
+    }                     /*ANIMACION FINALIZAR*/
+    .btn{
+        position: relative;
+        padding: 1em 1.5em;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        font-size: 18px;
+        margin: 1em 0.8em;
+    }
+    .boton{
+        color: black;
+    }
+    .boton::after, .boton::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        border: 2px solid;
+        transition: all 0.6s ease;
+        border-radius: 2px;
+    }
+    .boton::after{
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: $rojoFuerte;
+        border-right-color: $rojoFuerte;
+    }
+    .boton::before{
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: $rojoClaro;
+         border-left-color: $rojoClaro;
+    }
+    .boton:hover:after, .boton:hover:before{
+        width: 100%;
+        height: 100%;
+    }  
+}

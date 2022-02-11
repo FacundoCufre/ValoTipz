@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+}
+                                            /*HEADER*/
+header{
+    height: 120px;
+    background-color: #bb3732;
+}
+h1{
+    margin-left: 30px;
+    text-align: left;
+    line-height: 100px;
+    font-family: "Battambang";
+    font-size: 50px;
+}
+#barra-busq a {
+    color: #f6f7f8;
+    background: #bb3732;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+#barra-busq a:hover {
+    background: #1a1919;
+} 
+#barra-busq ul {
+    list-style: none;
+    display: flex;
+}
+#barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#barra-busq li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+  .submenu li {
+    position: relative;
+}
+span{
+    font-size: 100px;
+}

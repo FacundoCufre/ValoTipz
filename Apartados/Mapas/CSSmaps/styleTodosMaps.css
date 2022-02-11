@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+}
+/*HEADER*/
+header{
+    height: 120px;
+    background-color: #bb3732;
+}
+h1{
+    margin-left: 30px;
+    text-align: left;
+    line-height: 100px;
+    font-family: "Battambang";
+    font-size: 50px;
+}
+#barra-busq a {
+    color: #f6f7f8;
+    background: #bb3732;
+    height: 64px;
+    font-family: lato;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+#barra-busq a:hover {
+    background: #1a1919;
+} 
+#barra-busq ul {
+    list-style: none;
+    display: flex;
+}
+#barra-busq li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#barra-busq li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+  .submenu li {
+    position: relative;
+}
+/*MAPAS*/
+h2.maps{
+    text-align: center;
+    height: 100px;
+    padding-top: 20px;
+    font-family: "Battambang";
+    color: #f6f7f8;
+    background: linear-gradient(to top , #000, #bb3732);
+}
+section.maps{
+    padding-top: 50px;
+    height: 2300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+}
+div.mapas{
+    height: 300px;
+    background-color: #333;
+    margin-top: 20px;
+    width: 70%;
+    border: solid #e8e8e7;
+}
+.map1{
+    background-image: url(../../../Multimedia/ascentVistaPrevia.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.map2{
+    background-image: url(../../../Multimedia/bindVistaPrevia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.map3{
+    background-image: url(../../../Multimedia/breezeVistaPrevia.png);
+    background-size: cover;
+    background-position: center;
+}
+.map4{
+    background-image: url(../../../Multimedia/fractureVIstaPrevia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.map5{
+    background-image: url(../../../Multimedia/HavenVistaPrevia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.map6{
+    background-image: url(../../../Multimedia/iceboxVistaPrevia.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.map7{
+    background-image: url(../../../Multimedia/splitVistaPrevia.jpg);
+    background-size: cover;
+    background-position: center;
+}
