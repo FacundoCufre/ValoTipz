@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+@import "SCSSparciales/Header";                     /*HEADER*/
+
+@import "SCSSparciales/menu";
+
+.cuerpo__section--menu{
+    height: auto;
+}
+.cuerpo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: $rojoClaro;
+}
+                                                     /*MAIN*/
+.cuerpo__section--main{
+    width: 82%;
+    height: 100%;}
