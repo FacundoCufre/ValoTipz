@@ -11,53 +11,46 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 data-aos="fade-right">ValoTipz</h1>
+    <header class="encabezado">
+        <div class="encabezado__span"><span>ValoTipz</span></div>
+        <div class="encabezado--logo"><span>1</span></div>
+        <div class="encabezado--logo"><span>2</span></div>
     </header>
-    <nav id="barra-busq"> <!-- MENU CON SUBMENU --->
-        <ul style="margin-bottom: 0;">
-          <li>
-            <a href="../../index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="#">Agentes</a>
-            <ul class="submenu">
-                <li><a href="../Agentes/Centinelas/Centinelas.html">Centinelas</a></li>
-                <li><a href="../Agentes/Iniciadores/Iniciadores.html">Iniciadores</a></li>
-                <li><a href="../Agentes/Duelistas/Duelistas.html">Duelistas</a></li>
-                <li><a href="../Agentes/Controladores/Controladores.html">Controladores</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="../armas.html">Armas</a>
-          </li>
-          <li>
-            <a href="TodosMaps.html">Mapas</a>
-            <ul class="submenu">
-              <li><a href="Ascent.html">Ascent</a></li>
-              <li><a href="Bind.html">Bind</a></li>
-              <li><a href="Breeze.html">Breeze</a></li>
-              <li><a href="Fracture.html">Fracture</a></li>
-              <li><a href="Haven.html">Haven</a></li>
-              <li><a href="Icebox.html">Icebox</a></li>
-              <li><a href="Split.html">Split</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="../contacto.html">Contacto</a>
-          </li>
+    <div class="historial">
+        <ul class="historial--breadcrumb">
+            <li>Home</li>
         </ul>
-      </nav>
-      <h2 class="maps">Mapas</h2> <!--- FLEXBOX SECCION MAPAS -->
-      <section class="maps">
-        <div class="mapas map1">Ascent</div>
-        <div class="mapas map2">Bind</div>
-        <div class="mapas map3">Breeze</div>
-        <div class="mapas map4">Fracture</div>
-        <div class="mapas map5">Haven</div>
-        <div class="mapas map6">Icebox</div>
-        <div class="mapas map7">Split</div>
-      </section>
+    </div>
+    <section class="cuerpo">
+        <section class="cuerpo__section--menu">
+            <div class="menu">
+                <div class="simple--item"><a href="">
+                    <input type="button" id="item0">
+                    <label class="simple--item-label" for="item0">INICIO</label></a>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="item1">
+                    <label class="item-label" for="item1">AGENTES</label>
+                    <div class="item-content">
+                    <a href="Apartados/TodosAg.html">Todos</a>
+                    <a href="Apartados/Centinelas/Centinelas.html">Centinelas</a>
+                    <a href="Apartados/Controladores/Controladores.html">Controladores</a>
+                    <a href="Apartados/Duelistas/Duelistas.html">Duelistas</a>
+                    <a href="Apartados/Iniciadores/Iniciadores.html">Iniciadores</a>
+                    </div>
+                </div>
+                <div class="simple--item"><a href="Apartados/Mapas.html">
+                    <input type="button" id="item2">
+                    <label class="simple--item-label" for="item2">MAPAS</label></a>
+                </div>
+                <div class="simple--item"><a href="Apartados/armas.html">
+                    <input type="button" id="item3">
+                    <label class="simple--item-label" for="item3">ARMAS</label></a>
+                </div>
+            </div>
+        </section>
+        <section class="cuerpo__section--main">
+        </section>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
