@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$rojoClaro: #bb3732;
+$rosita: #ff4454;
+$rojoFuerte: #981914;
+$blanco: #f6f7f8;
+$negro: #1b1a1a;
+$grisOscuro: #2c2a2a;
+$grisClaro: #494747;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.encabezado{
+    width: 100%;
+    height: 130px;
+    background-color: $negro;
+    display: flex;
+    flex-direction: row;
+}
+.encabezado__span{
+    color: $blanco;
+    height: 100%;
+    width: 70%;
+    line-height: 130px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+.encabezado--logo{
+    height: 80%;
+    width: 15%;
+    text-align: center;
+    border: $rosita 1px solid;
+    margin: 5px;
+}
+.historial{
+    width: 100%;
+    height: 36px;
+    border-bottom: 4px $rojoFuerte solid;
+    border-top: 4px $rojoFuerte solid;
+    margin: 0;
+    padding-left: 3%;
+
+}
+ul.historial--breadcrumb {
+    list-style: none;
+    background-color: $blanco;
+    padding: 0;
+    margin: 0;
+}
+  
+ul.historial--breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.historial--breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.historial--breadcrumb li a {
+    color: $grisOscuro;
+    text-decoration: none;
+}
+  
+ul.historial--breadcrumb li a:hover {
+    color: $rojoClaro;
+    text-decoration: underline;
+}

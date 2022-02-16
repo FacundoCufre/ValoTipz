@@ -1,0 +1,114 @@
+                                                     /*MENU*/
+.cuerpo__section--menu{
+    z-index: 1;
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+    align-items: center;
+    padding-top: 30px;
+    border-right: black solid 1px;
+}
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.menu {
+    overflow: hidden;
+    align-items: center;
+    width: 80%;
+}
+.simple--item{
+    width: 100%;
+    color: $blanco;
+    overflow: hidden;
+    border-top: $grisOscuro 1px solid;
+    &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: black;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0;
+        &:hover {
+            background: $grisOscuro;
+        }
+    }
+    a{
+        color: $blanco;
+        text-decoration: none;
+    }
+}
+.item {
+    width: 100%;
+    color: $blanco;
+    overflow: hidden;
+    border-top: $grisOscuro 1px solid;
+    &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: black;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0;
+        &:hover {
+            background: $grisOscuro;
+        }
+        &::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all .25s;
+        }
+    }
+    &-content {
+        max-height: 0;
+        padding: 0 1em;
+        color: $grisOscuro;
+        background: $grisClaro;
+        transition: all .25s;
+    }
+    &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: $grisOscuro;
+        cursor: pointer;
+        &:hover {
+            background: $grisOscuro;
+        }
+    }
+}
+input:checked {
+    + .item-label {
+      background: $grisOscuro;
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+    ~ .item-content {
+        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        a{
+            width: 100%;
+            height: 30px;
+            color: $blanco;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $rojoClaro;
+        }
+    }
+}

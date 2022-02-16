@@ -11,7 +11,7 @@
                                                      /*CUERPO*/
 .cuerpo{
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     display: flex;
     flex-direction: row;
     background-color: $rojoClaro;
@@ -60,19 +60,36 @@
         width: 90%;
         display: grid;
         grid-template-columns: 20% 30% 15% 35%;
-        grid-template-rows: 20% 20% 20% 20% 10% 10%;
+        grid-template-rows: 125px 125px 125px 125px 125px 63px 63px;
     }
     
     .foto{
         background-color: $blanco;
         grid-column: 4/5;
-        grid-row: 1/7;
+        grid-row: 1/8;
     }
     .hab{
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: $grisOscuro;
+        grid-column: 1/2;
+    }
+    .estr{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $grisOscuro;
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .ulti{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $grisOscuro;
+        grid-column: 1/2;
+        grid-row: 4/5;
     }
     .desc{
         background-color: $blanco;
@@ -82,6 +99,40 @@
         font-size: 12px;
         font-family: 'Inconsolata', monospace;
         color: black;
+        grid-column: 2/3;
+    }
+    .descEstr{
+        background-color: $blanco;
+        border-top: solid 1px $grisClaro;
+        border-right: solid 1px $grisOscuro;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Inconsolata', monospace;
+        color: black;
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    .descUlti{
+        background-color: $blanco;
+        border-top: solid 1px $grisClaro;
+        border-right: solid 1px $grisOscuro;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Inconsolata', monospace;
+        color: black;
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .costeEstr{
+        background-color: $grisClaro;
+        border-top: solid 1px $grisOscuro;
+        border-right: solid 1px $grisOscuro;
+        text-align: center;
+        line-height: 125px;
+        color: $blanco;
+        font-size: 20px;
+        font-family: 'Inconsolata', monospace;
+        grid-column: 3/4;
     }
     .coste{
         background-color: $grisClaro;
@@ -92,6 +143,7 @@
         color: $blanco;
         font-size: 20px;
         font-family: 'Inconsolata', monospace;
+        grid-column: 3/4;
     }
     .puntos{
         background-color: $grisClaro;
@@ -101,6 +153,8 @@
         line-height: 125px;
         color: $blanco;
         font-family: 'Inconsolata', monospace;
+        grid-row: 4/5;
+        grid-column: 3/4;
     }
     .rad{
         background-color: $blanco;
@@ -110,6 +164,7 @@
         color: black;
         font-size: 36px;
         font-family: 'Inconsolata', monospace;
+        grid-row: 6/7;
     }
     .pais{
         background-color: $blanco;
@@ -119,11 +174,13 @@
         color: black;
         font-size: 36px;
         font-family: 'Inconsolata', monospace;
+        grid-column: 1/2;
+        grid-row: 7/8;
     }
     .rol{
         background-color: brown;
         grid-column: 2/3;
-        grid-row: 5/7;
+        grid-row: 6/8;
         border-top: solid 1px $grisClaro;
         display: flex;
         flex-direction: row;
@@ -162,6 +219,7 @@
         color: black;
         font-size: 26px;
         font-family: 'Inconsolata', monospace;
+        grid-row: 6/7;
     }
     .raza{
         background-color: $blanco;
@@ -172,5 +230,7 @@
         color: black;
         font-size: 36px;
         font-family: 'Inconsolata', monospace;
+        grid-row: 7/8;
+        grid-column: 3/4;
     }
 }

@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     .error__div{
         width: 40%;
         height: 400px;
@@ -49,5 +50,10 @@ body{
             color: $rojoClaro;
             font-size: 40px;
         }
+    }
+    .inicio{
+        color: $rojoFuerte;
+        text-decoration: none;
+        margin-top: 40px;
     }
 }
