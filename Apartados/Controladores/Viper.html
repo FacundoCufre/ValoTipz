@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce todo sobre Valorant. Agentes, mapas, trailers, historia y más sobre el videojuego.">
-    <meta name="keywords" content="VALORANT, RIOT, SHOOTER, 5v5, AGENTES, BRIMSTONE, HUMOS, SMOKER, CONTROLADOR">
+    <meta name="description" content="Conoce todo sobre Viper, el agente de Valorant.">
+    <meta name="keywords" content="VALORANT, RIOT, SHOOTER, 5v5, AGENTES, VIPER, HUMOS, SMOKER, CONTROLADOR, VENENO, MURO, LINEUPS">
     <title>Viper</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../CSS/CSSagentes/styleAgents.css">
+    <link rel="stylesheet" href="../../CSS/CSSagentes/styleAgentesIndividual.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 </head>
 <body>
@@ -20,7 +20,7 @@
   <div class="historial">
     <ul class="historial--breadcrumb">
       <li><a href="../../index.html">Home</a></li>
-      <li><a href="Centinelas.html">Controladores</a></li>
+      <li><a href="Controladores.html">Controladores</a></li>
       <li>Viper</li>
     </ul>
   </div>
@@ -57,28 +57,40 @@
         <div class="agente--nombre"><span>VIPER</span></div>
         <div class="agente--descripcion"><p>Química estadounidense, Viper despliega varios artefactos químicos venenosos para controlar el campo de batalla y afectar la visión de los enemigos. Si las toxinas no asesinan a su presa, sin duda lo harán sus juegos mentales.</p></div>
       </section>
-      <section class="todaInfo">
-        <section class="todaInfo__section">
-          <div class="hab"><img src="../../Multimedia/agentes/viper1.png" alt="NUBE VENENOSA" height="80%"></div>
-          <div class="desc"><p>EQUIPA un emisor de gas y DISPARA para lanzarlo. Este permanecerá ahí durante toda la ronda. VUELVE A USAR la habilidad para crear una nube de gas tóxica que usa combustible. Puedes VOLVER A USAR esta habilidad varias veces y puedes recuperarla para VOLVER A DESPLEGARLA.</p></div>
-          <div class="coste"><span>200 CRÉDITOS</span></div>
-          <div class="hab"><img src="../../Multimedia/agentes/viper2.png" alt="MORDEDURA" height="80%"></div>
-          <div class="desc"><p>EQUIPA un lanzador de químicos. DISPARA para lanzar un contenedor que se rompe al impactar contra el suelo. Este crea una zona química que permanece en el campo, la cual daña y ralentiza a los enemigos.</p></div>
-          <div class="coste"><span>200 CRÉDITOS</span></div>
-          <div class="hab"><img src="../../Multimedia/agentes/viper3.png" alt="CORTINA TÓXICA" height="80%"></div>
-          <div class="desc"><p>EQUIPA un lanzador de gas y DISPARA para desplegar una larga hilera de emisores de gas. VUELVE A USAR la habilidad para crear un muro de gas tóxico que usa combustible. Puedes VOLVER A USAR esta habilidad varias veces.</p></div>
-          <div class="coste"><span>GRATIS</span></div>
-          <div class="hab"><img src="../../Multimedia/agentes/viper4.png" alt="FOSA VIPÉREA" height="80%"></div>
-          <div class="desc"><p>EQUIPA un rociador y DISPARA para lanzar una nube de químicos en todas las direcciones alrededor de Viper, lo que crea una gran nube que reduce el alcance de visión y la vida máxima de los jugadores que estén dentro de ella.</p></div>
-          <div class="puntos"><span>♦ ♦ ♦ ♦ ♦ ♦ ♦ 7</span></div>
-          <div class="rad"><span>NO RADIANTE</span></div>
-          <div class="numero"><span>AGENTE #009</span></div>
-          <div class="rol">
-          <div class="logo"><img src="../../Multimedia/agentes/controladores.png" alt="CONTROLADORES" height="50%"></div>
-          <div class="texto"><p>CONTROLADORA</p></div></div>
-          <div class="pais"><span>USA</span></div>
-          <div class="raza"><span>HUMANA</span></div>
-          <div class="foto"><img src="../../Multimedia/agentes/viper.png" alt="viper" height="100%"></div>
+      <section class="info">
+        <section class="info__section--foto">
+            <div class="foto"><img src="../../Multimedia/agentes/viper.png" alt="viper" height="100%"></div>
+            <div class="rol">
+                <div class="texto"><span>CONTROLADOR</span></div>
+                <div class="logo"><img src="../../Multimedia/agentes/controladores.png" alt="CENTINELAS" height="50%"></div>
+            </div>
+        </section>
+        <section class="info__section--principal">
+          <div class="info--titulo">
+              <h2>HABILIDADES</h2>
+          </div>
+          <div class="info--guia--hab">
+              <span class="span1">HABILIDAD</span><span class="span2">DESCRIPCIÓN</span><span class="span3">VALOR</span><span class="span4">CANTIDAD INICIAL MÁX.</span>
+          </div>
+          <div class="info--hab">
+            <div class="span1"><span>NUBE VENENOSA</span></div><div class="spanimg"><img src="../../Multimedia/agentes/viper1.png" alt="NUBE VENENOSA" height="70%"></div><div class="span2"><p>EQUIPA un emisor de gas y DISPARA para lanzarlo. Este permanecerá ahí durante toda la ronda. VUELVE A USAR la habilidad para crear una nube de gas tóxica que usa combustible. Puedes VOLVER A USAR esta habilidad varias veces y puedes recuperarla para VOLVER A DESPLEGARLA.</p></div><div class="span3"><span>200 CRÉDITOS</span></div><div class="span4"><span>UNO</span></div>
+          </div>
+          <div class="info--hab">
+            <div class="span1"><span>MORDEDURA</span></div><div class="spanimg"><img src="../../Multimedia/agentes/viper2.png" alt="MORDEDURA" height="70%"></div><div class="span2"><p>EQUIPA un lanzador de químicos. DISPARA para lanzar un contenedor que se rompe al impactar contra el suelo. Este crea una zona química que permanece en el campo, la cual daña y ralentiza a los enemigos.</p></div><div class="span3"><span>200 CRÉDITOS</span></div><div class="span4"><span>DOS</span></div>
+          </div>
+          <div class="info--hab">
+            <div class="span1"><span>CORTINA TÓXICA</span></div><div class="spanimg"><img src="../../Multimedia/agentes/viper3.png" alt="MANTO OSCURO" height="70%"></div><div class="span2"><p>EQUIPA un lanzador de gas y DISPARA para desplegar una larga hilera de emisores de gas. VUELVE A USAR la habilidad para crear un muro de gas tóxico que usa combustible. Puedes VOLVER A USAR esta habilidad varias veces.</p></div><div class="span3"><span>GRATIS</span></div><div class="span4"><span>UNO</span></div>
+          </div>
+          <div class="info--guia--ulti"><span class="span1">ULTIMATE</span><span class="span2">DESCRIPCIÓN</span><span class="span3">VALOR</span><span class="span4">DURACIÓN</span></div>
+          <div class="info--ulti">
+            <div class="span1"><span>FOSA VIPÉREA</span></div><div class="spanimg"><img src="../../Multimedia/agentes/viper4.png" alt="DESDE LAS SOMBRAS" height="70%"></div><div class="span2"><p>EQUIPA un rociador y DISPARA para lanzar una nube de químicos en todas las direcciones alrededor de Viper, lo que crea una gran nube que reduce el alcance de visión y la vida máxima de los jugadores que estén dentro de ella.</p></div><div class="span3"><span>♦ ♦ ♦ ♦ ♦ ♦ ♦ 7</span></div><div class="span4"><span>UN USO</span></div>
+          </div>
+          <div class="info--titulo">
+              <h2>DATOS PERSONALES</h2>
+          </div>
+          <div class="info--bio">
+            <span>NO RADIANTE</span><span>AGENTE #009</span><span>ESTADOUNIDENSE</span><span>HUMANA</span>
+          </div>
         </section>
       </section>
     </section>

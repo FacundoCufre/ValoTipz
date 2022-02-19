@@ -89,7 +89,7 @@ ul.historial--breadcrumb li a:hover {
 
 /*MAIN*/
 .cuerpo__section--main {
-  width: 82%;
+  width: 88%;
   height: 100%;
 }
 
@@ -306,7 +306,7 @@ ul.historial--breadcrumb li a:hover {
 /*MENU*/
 .cuerpo__section--menu {
   z-index: 1;
-  width: 18%;
+  width: 12%;
   height: 100%;
   display: flex;
   flex-direction: column;

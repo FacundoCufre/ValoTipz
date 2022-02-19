@@ -5,69 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conoce todo sobre Sova, el agente de Valorant.">
-    <meta name="keywords" content="VALORANT, RIOT, SHOOTER, 5v5, AGENTES, INICIADORES, INICIADOR, AGRESIVOS, ATAQUE, BREACH, SKYE, SOVA, KAYO, ROBOT, FLECHAS, ARQUERO, RUSIA, RUSO, SHOCKDART, DARDOS, CAZADO, DRON, SPOTER, INFORMACION">
+    <meta name="keywords" content="VALORANT, RIOT, SHOOTER, 5v5, AGENTES, SOVA, SPOTTER, FLECHAS, MARCA, INICIADOR">
     <title>Sova</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styleAgents.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="../../CSS/CSSagentes/styleAgentesIndividual.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 </head>
 <body>
   <header class="encabezado">
-    <div class="container-fluid encabezado__div">
-      <section class="row">
-      <h1 data-aos="fade-right" class="col-xs-12 col-md-6 encabezado__h1">ValoTipz</h1>
-      <ol class="encabezado__breadcrumb breadcrumb col-md-5 col-sm-0">
-        <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-        <li class="breadcrumb-item"><a href="../TodosAg.html">Agentes</a></li>
-        <li class="breadcrumb-item"><a href="../../Mapas/TodosMaps.html">Mapas</a></li>
-      </ol>
-    </section>
-    </div>
+      <div class="encabezado__span"><span>ValoTipz</span></div>
+      <div class="encabezado--logo"><span>1</span></div>
+      <div class="encabezado--logo"><span>2</span></div>
   </header>
-  <nav id="barra-busq">                   <!-- MENU CON SUBMENU --->
-      <ul style="margin-bottom: 0;">
-        <li>
-          <a href="../../../index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="../TodosAg.html">Agentes</a>
-          <ul class="submenu">
-              <li><a href="../Centinelas/Centinelas.html">Centinelas</a></li>
-              <li><a href="Iniciadores.html">Iniciadores</a></li>
-              <li><a href="../Duelistas/Duelistas.html">Duelistas</a></li>
-              <li><a href="../Controladores/Controladores.html">Controladores</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="../../armas.html">Armas</a>
-        </li>
-        <li>
-          <a href="../../Mapas/TodosMaps.html">Mapas</a>
-          <ul class="submenu">
-            <li><a href="../../Mapas/Ascent.html">Ascent</a></li>
-            <li><a href="../../Mapas/Bind.html">Bind</a></li>
-            <li><a href="../../Mapas/Breeze.html">Breeze</a></li>
-            <li><a href="../../Mapas/Fracture.html">Fracture</a></li>
-            <li><a href="../../Mapas/Haven.html">Haven</a></li>
-            <li><a href="../../Mapas/Icebox.html">Icebox</a></li>
-            <li><a href="../../Mapas/Split.html">Split</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="../../contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-    <span>EN CONSTRUCCION!!</span>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-</body>
-</html>
+  <div class="historial">
+    <ul class="historial--breadcrumb">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="Iniciadores.html">Iniciadores</a></li>
+      <li>Sova</li>
+    </ul>
+  </div>
+  <section class="cuerpo">
+    <section class="cuerpo__section--menu">
+      <div class="menu">
+        <div class="simple--item"><a href="../../index.html">
+          <input type="button" id="item0">
+          <label class="simple--item-label" for="item0">INICIO</label></a>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="item1">
+          <label class="item-label" for="item1">AGENTES</label>
+          <div class="item-content">
+            <a href="../TodosAg.html">Todos</a>
+            <a href="../Centinelas/Centinelas.html">Centinelas</a>
+            <a href="../Controladores/Controladores.html">Controladores</a>
+            <a href="../Duelistas/Duelistas.html">Duelistas</a>
+            <a href="../Iniciadores/Iniciadores.html">Iniciadores</a>
+          </div>
+        </div>
+        <div class="simple--item"><a href="../Mapas.html">
+          <input type="button" id="item2">
+          <label class="simple--item-label" for="item2">MAPAS</label></a>
+        </div>
+        <div class="simple--item"><a href="../armas.html">
+          <input type="button" id="item3">
+          <label class="simple--item-label" for="item3">ARMAS</label></a>
+        </div>
+      </div>
+      <div class="menu2">
+        <a href="../../index.html"><button class="button-48" role="button"><span class="text">INICIO</span></button></a>
+        <a href="../TodosAg.html"><button class="button-48" role="button"><span class="text">AGENTES</span></button></a>
+        <a href="../Mapas.html"><button class="button-48" role="button"><span class="text">MAPAS</span></button></a>
+        <a href="../armas.html"><button class="button-48" role="button"><span class="text">ARMAS</span></button></a>
+      </div>
+    </section>
+    <section class="cuerpo__section--main">
+      <section class="agente">
+        <div class="agente--nombre"><span>Sova</span></div>
+        <div class="agente--descripcion"><p>Proveniente de la tundra del eterno invierno de Rusia. Sova rastrea, encuentra y elimina a sus enemigos con gran eficiencia y precisión. Su arco personalizado y sus increíbles habilidades de exploración impedirán que sus enemigos puedan esconderse de él.</p></div>
+      </section>
+      <section class="info">
+        <section class="info__section--foto">
+            <div class="foto"><img src="../../Multimedia/agentes/sova.png" alt="sova" height="100%"></div>
+            <div class="rol">
+                <div class="texto"><span>INICIADOR</span></div>
+                <div class="logo"><img src="../../Multimedia/agentes/iniciadores.png" alt="iniciadores" height="50%"></div>
+            </div>
+        </section>
+        <section class="info__section--principal">
+          <div class="info--titulo">
+              <h2>HABILIDADES</h2>
+          </div>
+          <div class="info--guia--hab">
+              <span class="span1">HABILIDAD</span><span class="span2">DESCRIPCIÓN</span><span class="span3">VALOR</span><span class="span4">CANTIDAD INICIAL MÁX.</span>
+          </div>
+          <div class="info--hab">
+            <div class="span1"><span>PROYECTIL ELÉCTRICO</span></div><div class="spanimg"><img src="../../Multimedia/agentes/sova1.png" alt="PROYECTIL ELÉCTRICO" height="70%"></div><div class="span2"><p>EQUIPA un arco con un proyectil eléctrico y DISPARA para lanzarlo. El proyectil detonará al impactar y dañará a los jugadores cercanos. MANTÉN PRESIONADO EL BOTÓN DE DISPARO para aumentar el alcance del proyectil. Usa el DISPARO SECUNDARIO para añadir hasta dos rebotes a su trayectoria.</p></div><div class="span3"><span>200 CRÉDITOS</span></div><div class="span4"><span>DOS</span></div>
+          </div>
+          <div class="info--hab">
+            <div class="span1"><span>DRON BÚHO</span></div><div class="spanimg"><img src="../../Multimedia/agentes/sova2.png" alt="DRON BÚHO" height="70%"></div><div class="span2"><p>EQUIPA un dron búho y DISPARA para desplegarlo y controlar su movimiento. Mientras lo controlas, DISPARA para lanzar un dardo marcador que revelará la ubicación de cualquier jugador al que impacte.</p></div><div class="span3"><span>400 CRÉDITOS</span></div><div class="span4"><span>UNO</span></div>
+          </div>
+          <div class="info--hab">
+            <div class="span1"><span>PROYECTIL RASTREADOR</span></div><div class="spanimg"><img src="../../Multimedia/agentes/sova3.png" alt="PROYECTIL RASTREADOR" height="70%"></div><div class="span2"><p>EQUIPA un arco con un proyectil rastreador y DISPARA para lanzarlo. El proyectil se activará al impactar y revelará la ubicación de los enemigos cercanos que estén dentro de su alcance. MANTÉN PRESIONADO EL BOTÓN DE DISPARO para aumentar el alcance del proyectil. Usa el DISPARO SECUNDARIO para añadir hasta dos rebotes a la trayectoria de la flecha.</p></div><div class="span3"><span>GRATIS</span></div><div class="span4"><span>UNO</span></div>
+          </div>
+          <div class="info--guia--ulti"><span class="span1">ULTIMATE</span><span class="span2">DESCRIPCIÓN</span><span class="span3">VALOR</span><span class="span4">DURACIÓN</span></div>
+          <div class="info--ulti">
+            <div class="span1"><span>FURIA DEL CAZADOR</span></div><div class="spanimg"><img src="../../Multimedia/agentes/sova4.png" alt="FURIA DEL CAZADOR" height="70%"></div><div class="span2"><p>EQUIPA un arco con tres ráfagas de energía de largo alcance que atraviesan las paredes. DISPARA para lanzar una ráfaga de energía frente a Sova que infligirá daño y revelará la ubicación de los enemigos impactados. Puedes VOLVER A USAR esta habilidad hasta dos veces más mientras su contador esté activo.</p></div><div class="span3"><span>♦ ♦ ♦ ♦ ♦ ♦ ♦ 7</span></div><div class="span4"><span>UN USO</span></div>
+          </div>
+          <div class="info--titulo">
+              <h2>DATOS PERSONALES</h2>
+          </div>
+          <div class="info--bio">
+            <span>NO RADIANTE</span><span>AGENTE #008</span><span>RUSO</span><span>HUMANO</span>
+          </div>
+        </section>
+      </section>
+    </section>
+  </section>
+</body
