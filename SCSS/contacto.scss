@@ -1,35 +1,50 @@
-@import "SCSSparciales/headerMenu";
-
-$big: 1000px;
-$medium: 700px;
-$small: 500px;
-$smaller: 100px;
-body{
-    background-color: $blanco;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-.fondo{
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+@import "SCSSparciales/Header";                     /*HEADER*/
+@import "SCSSparciales/footer";                     /*FOOTER*/
+
+.cuerpo{                     /*CUERPO*/
     width: 100%;
-    background-image: url(../Multimedia/fondoContacto.svg);
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    background-color: $rojoClaro;
+}
+
+@import "SCSSparciales/menu2";                     /*MENU*/
+
+@media screen and (min-width:768px) {                        /*MIN 767px*/
+    .contacto{
+    height: 94%;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 40% 35% 25%;
+    grid-template-rows: 60% 40%;
 }
 .radial{                     /*OPCIONES (RADIAL)*/
-    width: 100%;
-    height: ($medium) - ($smaller);
+    grid-column: 1/3;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     .radial__titulo{
-        width: $medium;
-        height: $small;
+        width: 100%;
+        height: 100%;
+        padding-top: 150px;
         background-color: $blanco; 
         border: 3px solid $rojoFuerte;
-        border-radius: 20px;
         section{
             width: 100%;
             height: 20%;
             text-align: center;
-            line-height: 120px;
             font-size: 35px;
             font-family:Verdana, Geneva, Tahoma, sans-serif
         }
@@ -61,8 +76,8 @@ body{
                 }
                 label span:hover,
                 input[type="radio"]:checked + span{
-                    background-color: $rosita;
-                    color: $rojoFuerte;
+                    background-color: $rojoClaro;
+                    color: $negro;
                 }
                 label span:before{
                     content: "";
@@ -81,168 +96,192 @@ body{
         }
     } 
 }
-.contacto{                     /*INFO DE CONTACTO*/
-    height:($medium) - ($smaller);
-    width: 100%;
+.contacto--redes{                                              /*REDES*/
+    grid-column: 3/4;
+    grid-row: 1/2;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    .contacto__titulo{
-        height: $small;
-        width: $small;
-        background-color: $blanco;
-        border: 3px solid $rojoFuerte;
-        border-radius: 20px;
+    flex-direction: column;
+    background-color: $rojoFuerte;
+    .contacto--redes__span{
+        width: 100%;
+        height: 40%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
-        margin: 50px;
-        section{
-            width: 100%;
-            height: 20%;
+        justify-content: center;
+        span{
+            font-size: 25px;
+            color: $blanco;
             text-align: center;
-            line-height: 100px;
-            font-size: 30px;
-            font-family:Verdana, Geneva, Tahoma, sans-serif
-        }
-        .contacto__div{
-            width: 100%;
-            height: 80%;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .mensaje{
-                border-radius: 10px;
-                border-color: $rojoClaro;
-                padding: 8px;
-                background-color: $blanco;
-            }
-            textarea:focus, .mensaje:focus, .mensaje[type]:focus {
-                border-color: $rojoFuerte;
-                box-shadow: 0 1px 2px $rosita inset, 0 0 8px $rojoClaro;
-                outline: 0 none;
-                background-color: white;
-            }
         }
     }
+    .contacto--redes--link{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacto--redes--mail{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $blanco;
+        font-size: 20px;
+    }
 }
-.group{                     /*ANIMACION CONTACTO*/
-    position: relative; 
-    margin-bottom: 45px; 
-    .usuario{
-        font-size: 18px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 300px;
-        border: none;
-        border-bottom: 1px solid $rosita;
+.contacto--usuario{                                                    /*USUARIO*/
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: $rojoFuerte;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .group{                                                              /*ANIMACION CONTACTO*/
+        position: relative; 
+        margin-bottom: 45px; 
+        .usuario{
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid $grisClaro;
+            background-color: $blanco;
+            height: 60px;
+        }
+        .usuario:focus{
+            outline: none;
+        }
+        .usser{
+            color: black; 
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            transition: 0.2s ease all; 
+            -moz-transition: 0.2s ease all; 
+            -webkit-transition: 0.2s ease all;
+        }
+        .usuario:focus ~ .usser, input:valid ~ .usser{
+            top: -20px;
+            font-size: 14px;
+            color: $negro;
+        }
+        .bar{
+            position:relative;
+            display:block;
+            width:300px;
+        }
+        .bar:before, .bar:after{
+            content: '';
+            height: 2px; 
+            width: 0;
+            bottom: 1px; 
+            position: absolute;
+            background: $blanco; 
+            transition: 0.2s ease all; 
+            -moz-transition: 0.2s ease all; 
+            -webkit-transition: 0.2s ease all;
+        }
+        .bar:before{
+            left: 50%;
+        }
+        .bar:after{
+            right: 50%; 
+        }
+        .usuario:focus ~ .bar:before, .usuario:focus ~ .bar:after{
+            width:50%;
+        }
+        .highlight {
+            position:absolute;
+            height:60%; 
+            width:100px; 
+            top:25%; 
+            left:0;
+            pointer-events:none;
+            opacity:0.5;
+        }
+        .usuario:focus ~ .highlight{
+            -webkit-animation:inputHighlighter 0.3s ease;
+            -moz-animation:inputHighlighter 0.3s ease;
+            animation:inputHighlighter 0.3s ease;
+        }
+        /* ANIMATIONS ================ */
+      @-webkit-keyframes inputHighlighter {
+          from { background: $negro; }
+        to 	{ width:0; background:transparent; }
+      }
+      @-moz-keyframes inputHighlighter {
+          from { background: $negro; }
+        to 	{ width:0; background: transparent; }
+      }
+      @keyframes inputHighlighter {
+          from { background: $negro; }
+        to 	{ width:0; background: transparent; }
+      }
+    }
+}
+.contacto--mensaje{                                                       /*MENSAJE*/
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $rojoFuerte;
+    span{
+        text-align: center;
+        font-size: 35px;
+        height: 20%;
+        color: $negro;
+    }
+    .mensaje{
+        height: 80%;
+        border-radius: 10px;
+        border-color: $rojoClaro;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         background-color: $blanco;
-        height: 60px;
     }
-    .usuario:focus{
-        outline: none;
+    textarea:focus, .mensaje:focus, .mensaje[type]:focus {
+        border-color: $rojoFuerte;
+        box-shadow: 0 1px 2px $rosita inset, 0 0 8px $rojoClaro;
+        outline: 0 none;
+        background-color: white;
     }
-    .usser{
-        color: black; 
-        font-size: 18px;
-        font-weight: normal;
-        position: absolute;
-        pointer-events: none;
-        left: 5px;
-        top: 10px;
-        transition: 0.2s ease all; 
-        -moz-transition: 0.2s ease all; 
-        -webkit-transition: 0.2s ease all;
-    }
-    .usuario:focus ~ .usser, input:valid ~ .usser{
-        top: -20px;
-        font-size: 14px;
-        color: $rojoFuerte;
-    }
-    .bar{
-        position:relative;
-        display:block;
-        width:300px;
-    }
-    .bar:before, .bar:after{
-        content: '';
-        height: 2px; 
-        width: 0;
-        bottom: 1px; 
-        position: absolute;
-        background: $rojoFuerte; 
-        transition: 0.2s ease all; 
-        -moz-transition: 0.2s ease all; 
-        -webkit-transition: 0.2s ease all;
-    }
-    .bar:before{
-        left: 50%;
-    }
-    .bar:after{
-        right: 50%; 
-    }
-    .usuario:focus ~ .bar:before, .usuario:focus ~ .bar:after{
-        width:50%;
-    }
-    .highlight {
-        position:absolute;
-        height:60%; 
-        width:100px; 
-        top:25%; 
-        left:0;
-        pointer-events:none;
-        opacity:0.5;
-    }
-    .usuario:focus ~ .highlight{
-        -webkit-animation:inputHighlighter 0.3s ease;
-        -moz-animation:inputHighlighter 0.3s ease;
-        animation:inputHighlighter 0.3s ease;
-    }
-    /* ANIMATIONS ================ */
-  @-webkit-keyframes inputHighlighter {
-      from { background: $rojoFuerte; }
-    to 	{ width:0; background:transparent; }
-  }
-  @-moz-keyframes inputHighlighter {
-      from { background: $rojoFuerte; }
-    to 	{ width:0; background: transparent; }
-  }
-  @keyframes inputHighlighter {
-      from { background: $rojoFuerte; }
-    to 	{ width:0; background: transparent; }
-  }
 }
-
-@mixin botones ($width, $flex, $centro){            /*FIN (ENV O ELIM)*/
+@mixin botones ($width, $flex, $centro){                             /*FIN (ENV O ELIM)*/
     width: $width;
     display: $flex;
     justify-content: $centro;
     align-items: $centro;
 }
 .finalizar{                     
-    width: 100%;
-    height: ($small/2);
+    grid-column: 3/4;
+    grid-row: 2/3;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
     .finalizar__div{
-        width: $big;
+        width: 100%;
+        height: 100%;
         background-color: $blanco;
         border: 3px solid $rojoFuerte;
-        border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         .finalizar__div__boton{
            @include botones(50%, flex, center)
         }
-    }                     /*ANIMACION FINALIZAR*/
+    }                                                /*ANIMACION FINALIZAR*/
     .btn{
         position: relative;
         padding: 1em 1.5em;
@@ -286,4 +325,277 @@ body{
         width: 100%;
         height: 100%;
     }  
+}
+}
+@media screen and (max-width:767px){                        /*MAX 767px*/
+    .contacto{
+        height: 94%;
+        width: 100%;
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+    }
+    .radial{                     /*OPCIONES (RADIAL)*/
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .radial__titulo{
+            width: 100%;
+            height: 100%;
+            background-color: $blanco; 
+            border: 3px solid $rojoFuerte;
+            section{
+                width: 100%;
+                height: 20%;
+                text-align: center;
+                font-size: 35px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif
+            }
+            .radial__div{
+                width: 100%;
+                height: 80%;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .radial__form{
+                    font-size: 25px;
+                    color: black;
+                    input[type="radio"]{
+                    display: none;
+                    }
+                    label{
+                        display: block;
+                        cursor: pointer;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                    }
+                    label span{
+                        display: inline-flex;
+                    align-items: center;
+                        padding: 10px 20px 10px 10px;
+                        border-radius: 31px;
+                        transition: .25s ease;
+                    }
+                    label span:hover,
+                    input[type="radio"]:checked + span{
+                        background-color: $rojoClaro;
+                        color: $negro;
+                    }
+                    label span:before{
+                        content: "";
+                        background-color: $blanco;
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        transition: .25s ease;
+                        box-shadow:  inset 0 0 0 2px $rojoFuerte;
+                    }
+                    input[type="radio"]:checked + span:before{
+                        box-shadow: inset 0 0 0 10px $rojoFuerte;
+                    }
+                }   
+            }
+        } 
+    }
+    .contacto--redes{                                              /*REDES*/
+        display: none;
+    }
+    .contacto--usuario{                                                    /*USUARIO*/
+        width: 100%;
+        height: 30%;
+        background-color: $rojoFuerte;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .group{                                                              /*ANIMACION CONTACTO*/
+            position: relative; 
+            margin-bottom: 45px; 
+            .usuario{
+                font-size: 18px;
+                padding: 10px 10px 10px 5px;
+                display: block;
+                width: 300px;
+                border: none;
+                border-bottom: 1px solid $grisClaro;
+                background-color: $blanco;
+                height: 60px;
+            }
+            .usuario:focus{
+                outline: none;
+            }
+            .usser{
+                color: black; 
+                font-size: 18px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                left: 5px;
+                top: 10px;
+                transition: 0.2s ease all; 
+                -moz-transition: 0.2s ease all; 
+                -webkit-transition: 0.2s ease all;
+            }
+            .usuario:focus ~ .usser, input:valid ~ .usser{
+                top: -20px;
+                font-size: 14px;
+                color: $negro;
+            }
+            .bar{
+                position:relative;
+                display:block;
+                width:300px;
+            }
+            .bar:before, .bar:after{
+                content: '';
+                height: 2px; 
+                width: 0;
+                bottom: 1px; 
+                position: absolute;
+                background: $blanco; 
+                transition: 0.2s ease all; 
+                -moz-transition: 0.2s ease all; 
+                -webkit-transition: 0.2s ease all;
+            }
+            .bar:before{
+                left: 50%;
+            }
+            .bar:after{
+                right: 50%; 
+            }
+            .usuario:focus ~ .bar:before, .usuario:focus ~ .bar:after{
+                width:50%;
+            }
+            .highlight {
+                position:absolute;
+                height:60%; 
+                width:100px; 
+                top:25%; 
+                left:0;
+                pointer-events:none;
+                opacity:0.5;
+            }
+            .usuario:focus ~ .highlight{
+                -webkit-animation:inputHighlighter 0.3s ease;
+                -moz-animation:inputHighlighter 0.3s ease;
+                animation:inputHighlighter 0.3s ease;
+            }
+            /* ANIMATIONS ================ */
+          @-webkit-keyframes inputHighlighter {
+              from { background: $negro; }
+            to 	{ width:0; background:transparent; }
+          }
+          @-moz-keyframes inputHighlighter {
+              from { background: $negro; }
+            to 	{ width:0; background: transparent; }
+          }
+          @keyframes inputHighlighter {
+              from { background: $negro; }
+            to 	{ width:0; background: transparent; }
+          }
+        }
+    }
+    .contacto--mensaje{                                                       /*MENSAJE*/
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $rojoFuerte;
+        span{
+            text-align: center;
+            font-size: 35px;
+            height: 20%;
+            color: $negro;
+        }
+        .mensaje{
+            height: 80%;
+            border-radius: 10px;
+            border-color: $rojoClaro;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: $blanco;
+        }
+        textarea:focus, .mensaje:focus, .mensaje[type]:focus {
+            border-color: $rojoFuerte;
+            box-shadow: 0 1px 2px $rosita inset, 0 0 8px $rojoClaro;
+            outline: 0 none;
+            background-color: white;
+        }
+    }
+    @mixin botones ($width, $flex, $centro){                             /*FIN (ENV O ELIM)*/
+        width: $width;
+        display: $flex;
+        justify-content: $centro;
+        align-items: $centro;
+    }
+    .finalizar{                     
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        .finalizar__div{
+            width: 100%;
+            height: 100%;
+            background-color: $blanco;
+            border: 3px solid $rojoFuerte;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            .finalizar__div__boton{
+               @include botones(50%, flex, center)
+            }
+        }                                                /*ANIMACION FINALIZAR*/
+        .btn{
+            position: relative;
+            padding: 1em 1.5em;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+            font-size: 18px;
+            margin: 1em 0.8em;
+        }
+        .boton{
+            color: black;
+        }
+        .boton::after, .boton::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            border: 2px solid;
+            transition: all 0.6s ease;
+            border-radius: 2px;
+        }
+        .boton::after{
+            bottom: 0;
+            right: 0;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: $rojoFuerte;
+            border-right-color: $rojoFuerte;
+        }
+        .boton::before{
+            top: 0;
+            left: 0;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-top-color: $rojoClaro;
+             border-left-color: $rojoClaro;
+        }
+        .boton:hover:after, .boton:hover:before{
+            width: 100%;
+            height: 100%;
+        }  
+    }
 }

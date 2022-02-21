@@ -4,118 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con el equipo de ValoTipz. Aportes, errores, consultas, lo que quieras.">
+    <meta name="keywords" content="VALORANT, RIOT, SHOOTER, 5v5, AGENTES, NOVEDADES, MAPAS, INFO, INFOMACIÓN, TIPS, CONTACTO, VALOTIPZ">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/contacto.css">
+    <link rel="stylesheet" href="../CSS/CSSextra/contacto.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 </head>
 <body>
-    <header class="encabezado">
-      <div class="container-fluid encabezado__div">
-        <section class="row">
-        <h1 data-aos="fade-right" class="col-xs-12 col-md-6 encabezado__h1">ValoTipz</h1>
-        <ol class="encabezado__breadcrumb breadcrumb col-md-5 col-sm-0">
-          <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-          <li class="breadcrumb-item"><a href="Agentes/TodosAg.html">Agentes</a></li>
-          <li class="breadcrumb-item"><a href="Mapas/TodosMaps.html">Mapas</a></li>
-        </ol>
-      </section>
-      </div>
-    </header>
-    <nav id="barra-busq">                   <!-- MENU CON SUBMENU --->
-        <ul style="margin-bottom: 0;">
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="Agentes/TodosAg.html">Agentes</a>
-            <ul class="submenu">
-                <li><a href="Agentes/Centinelas/Centinelas.html">Centinelas</a></li>
-                <li><a href="Agentes/Iniciadores/Iniciadores.html">Iniciadores</a></li>
-                <li><a href="Agentes/Duelistas/Duelistas.html">Duelistas</a></li>
-                <li><a href="Agentes/Controladores/Controladores.html">Controladores</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="armas.html">Armas</a>
-          </li>
-          <li>
-            <a href="Mapas/TodosMaps.html">Mapas</a>
-            <ul class="submenu">
-              <li><a href="Mapas/Ascent.html">Ascent</a></li>
-              <li><a href="Mapas/Bind.html">Bind</a></li>
-              <li><a href="Mapas/Breeze.html">Breeze</a></li>
-              <li><a href="Mapas/Fracture.html">Fracture</a></li>
-              <li><a href="Mapas/Haven.html">Haven</a></li>
-              <li><a href="Mapas/Icebox.html">Icebox</a></li>
-              <li><a href="Mapas/Split.html">Split</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Contacto</a>
-          </li>
-        </ul>
-    </nav>
-  <section class="fondo">
-    <section class="radial">                                 <!--FORMS-->       
-      <div class="radial__titulo"><section><span>¿Por qué motivo buscas contactarte?</span></section>
-        <div class="radial__div">
-          <form class="radial__form">
-              <label>
-                  <input type="radio" id="error" name="motivo"/>
-                  <span>Hay un error en la página.</span>
-              </label>
-              <label>
-                  <input type="radio" id="ayuda" name="motivo"/>
-                  <span>Necesito ayuda con algo relacionado con le página.</span>
-              </label>
-              <label>
-                  <input type="radio" id="aporte" name="motivo"/>
-                  <span>Quiero aportar algo a la página.</span>
-              </label>
-              <label>
-                  <input type="radio" id="trabajo" name="motivo"/>
-                  <span>Me gustaría ofrecer mi trabajo a la página.</span>
-              </label>
-              <label>
-                <input type="radio" id="otro" name="motivo"/>
-                <span>Otro motivo.</span>
-            </label>
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="contacto">
-      <div class="contacto__titulo"><section><span>Completa tu información.</span></section>
-        <div class="contacto__div">
-          <form>
-            <div class="group">      
-              <input class="usuario" type="text" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label class="usser">Nombre</label>
-            </div>
-            <div class="group">      
-              <input class="usuario" type="text" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label class="usser">Apellido</label>
-            </div>
-            <div class="group">      
-              <input class="usuario" type="text" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label class="usser">Email</label>
-            </div>  
-          </form>
-        </div>
-      </div>
-      <div class="contacto__titulo"><section><span>Escribe tu mensaje.</span></section>
-        <div class="contacto__div">
-          <textarea class="mensaje" name="comentario" rows="11" cols="40"></textarea>
-      </div>
+  <header class="encabezado">                          <!-- ENCABEZADO -->
+    <div class="encabezado--logo"><img src="../Multimedia/valoTipzRojo.png" height="70%" alt="valotipz"></div>
+    <div class="encabezado--derecha">
+        <div class="contacto"><a href=""><span>CONTÁCTANOS</span></a></div>
+        <div class="mapa"><a href=""><span>MAPA DEL SITIO</span></a></div>
     </div>
+  </header>
+  <div class="historial">                               <!-- BREACRUMB -->
+    <ul class="historial--breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li>Contacto</li>
+    </ul>
+  </div>
+  <section class="cuerpo">
+    <section class="cuerpo__section--menu">                <!-- MENU -->
+      <div class="menu2">                         <!-- MENU2 -->
+        <a href="../index.html"><button class="button-48" role="button"><span class="text">INICIO</span></button></a>
+        <a href="TodosAg.html"><button class="button-48" role="button"><span class="text">AGENTES</span></button></a>
+        <a href="Mapas.html"><button class="button-48" role="button"><span class="text">MAPAS</span></button></a>
+        <a href="armas.html"><button class="button-48" role="button"><span class="text">ARMAS</span></button></a>
+      </div>
     </section>
+    <section class="contacto">                  <!-- CONTACTO -->
+      <section class="radial">                                 <!--FORMS-->       
+        <div class="radial__titulo"><section><span>¿Por qué motivo buscas contactarte?</span></section>
+          <div class="radial__div">
+            <form class="radial__form">
+                <label>
+                    <input type="radio" id="error" name="motivo"/>
+                    <span>Hay un error en la página.</span>
+                </label>
+                <label>
+                    <input type="radio" id="ayuda" name="motivo"/>
+                    <span>Necesito ayuda con algo relacionado con le página.</span>
+                </label>
+                <label>
+                    <input type="radio" id="aporte" name="motivo"/>
+                    <span>Quiero aportar algo a la página.</span>
+                </label>
+                <label>
+                    <input type="radio" id="trabajo" name="motivo"/>
+                    <span>Me gustaría ofrecer mi trabajo a la página.</span>
+                </label>
+                <label>
+                  <input type="radio" id="otro" name="motivo"/>
+                  <span>Otro motivo.</span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacto--redes">
+        <div class="contacto--redes__span"><span>Tambien puedes contactarte por nuestras redes</span></div>
+        <div class="contacto--redes--link"><a href="https://twitter.com/TipzValo"><img src="../Multimedia/twitter.svg" height="80%" alt=""></a></div>
+        <div class="contacto--redes--link"><a href="https://www.tiktok.com/@valotipz"><img src="../Multimedia/tiktok.svg" height="80%" alt=""></a></div>
+        <div class="contacto--redes--mail"><span>ValoTipz@gmail.com</span></div>
+      </section>
+      <section class="contacto--usuario">
+        <form>
+          <div class="group">      
+            <input class="usuario" type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label class="usser">Nombre</label>
+          </div>
+          <div class="group">      
+            <input class="usuario" type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label class="usser">Apellido</label>
+          </div>
+          <div class="group">      
+            <input class="usuario" type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label class="usser">Email</label>
+          </div>  
+        </form>
+      </section>
+      <div class="contacto--mensaje">
+        <span>Escribe tu mensaje</span>
+        <textarea class="mensaje" name="comentario" rows="11" cols="40"></textarea>
+      </div>
       <section class="finalizar">
         <div class="finalizar__div">
           <div class="finalizar__div__boton">
@@ -131,6 +110,25 @@
         </div>
       </section>
     </section>
+  </section>
+  <footer>                                            <!-- FOOTER -->
+    <section class="redes">
+        <div class="redes__span"><span>¡Nuestras redes!</span></div>
+        <div class="redes--twitter"><a href="https://twitter.com/TipzValo"><img src="../Multimedia/twitter.svg" height="100%" alt="twitter"></a></div>
+        <div class="redes--youtube"><a href="https://www.youtube.com/channel/UCOuTZ3AXsJfNEBeccIHbmfg/featured"><img src="../Multimedia/youtube.svg" height="100%" alt="youtube"></a></div>
+        <div class="redes--tiktok"><a href="https://www.tiktok.com/@valotipz"><img src="../Multimedia/tiktok.svg" height="100%" alt="tiktok"></a></div>
+    </section>
+    <section class="creador">
+        <div class="creador--valotipz"><img src="../Multimedia/valoTipzBlanco.png" width="70%" alt="valotipz"></div>
+        <div class="creador--x"><img src="../Multimedia/x.svg" height="50%" alt=""></div>
+        <div class="creador--valorant"><img src="../Multimedia/valorant.png" width="80%" alt=""></div>
+        <div class="creador__span"><span>Creado por Facundo Cufré</span></div>
+    </section>
+    <section class="derechos">
+        <div class="derechos--riot"><span>Todos los derechos del videojuego "Valorant" pertenecen a la empresa Riot games.</span></div>
+        <div class="derechos--valotipz"><span>ValoTipz es una página sin fines de lucro.</span></div>
+    </section>
+</footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

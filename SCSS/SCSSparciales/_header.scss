@@ -20,21 +20,60 @@ $grisClaro: #494747;
     background-color: $negro;
     display: flex;
     flex-direction: row;
-}
-.encabezado__span{
-    color: $blanco;
-    height: 100%;
-    width: 70%;
-    line-height: 130px;
-    padding-left: 50px;
-    font-size: 30px;
-}
-.encabezado--logo{
-    height: 80%;
-    width: 15%;
-    text-align: center;
-    border: $rosita 1px solid;
-    margin: 5px;
+    .encabezado--logo{
+        height: 100%;
+        width:80%;
+        padding-left: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .encabezado--derecha{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        .contacto{
+            height: 50%;
+            width: 100%;
+            text-decoration: none;
+            color: $blanco;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $grisOscuro;
+            a{
+                color: $blanco;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .mapa{
+            height: 50%;
+            width: 100%;
+            text-decoration: none;
+            color: $blanco;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $grisOscuro;
+            a{
+                height: 100%;
+                width: 100%;
+                color: $blanco;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }
 .historial{
     width: 100%;
@@ -69,4 +108,101 @@ ul.historial--breadcrumb li a {
 ul.historial--breadcrumb li a:hover {
     color: $rojoClaro;
     text-decoration: underline;
+}
+@media screen and (max-width:500px) {
+    .encabezado{
+        width: 100%;
+        height: 130px;
+        background-color: $negro;
+        display: flex;
+        flex-direction: column;
+        .encabezado--logo{
+            height: 90%;
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .encabezado--derecha{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .contacto{
+                height: 100%;
+                width: 50%;
+                text-decoration: none;
+                color: $blanco;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $grisOscuro;
+                a{
+                    color: $blanco;
+                    height: 100%;
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .mapa{
+                height: 100%;
+                width: 50%;
+                text-decoration: none;
+                color: $blanco;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $grisOscuro;
+                a{
+                    height: 100%;
+                    width: 100%;
+                    color: $blanco;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .historial{
+        width: 100%;
+        height: 36px;
+        border-bottom: 4px $rojoFuerte solid;
+        border-top: 4px $rojoFuerte solid;
+        margin: 0;
+        padding-left: 3%;
+    
+    }
+    ul.historial--breadcrumb {
+        list-style: none;
+        background-color: $blanco;
+        padding: 0;
+        margin: 0;
+    }
+      
+    ul.historial--breadcrumb li {
+        display: inline;
+        font-size: 18px;
+    }
+    ul.historial--breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+    }
+    ul.historial--breadcrumb li a {
+        color: $grisOscuro;
+        text-decoration: none;
+    }
+      
+    ul.historial--breadcrumb li a:hover {
+        color: $rojoClaro;
+        text-decoration: underline;
+    }
 }

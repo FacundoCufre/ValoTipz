@@ -24,3 +24,32 @@ a{
     background-color: black;
     color: $blanco;
 }
+@media screen and (max-width:449px){
+    .menu{
+        display: none;
+    }
+    .cuerpo__section--menu{
+        z-index: 1;
+        width: 100%;
+        height: 6%;
+        background-color:black;
+    }
+    .menu2{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    @import "boton2.scss";
+    a{
+        width: 100%;
+        height: 100%;
+    }
+    .button-48{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        color: $blanco;
+    }
+}
