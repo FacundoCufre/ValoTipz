@@ -11,20 +11,20 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="encabezado__span"><span>ValoTipz</span></div>
-        <div class="encabezado--logo"><span>1</span></div>
-        <div class="encabezado--logo"><span>2</span></div>
+    <header class="encabezado">                          <!-- ENCABEZADO -->
+        <div class="encabezado--logo"><img src="../Multimedia/valoTipzRojo.png" height="70%" alt="valotipz"></div>
+        <div class="contacto"><a href="contacto.html"><span>CONTÁCTANOS</span></a></div>
     </header>
     <div class="historial">
         <ul class="historial--breadcrumb">
-            <li>Home</li>
+            <li><a href="../index.html">Home</a></li>
+            <li>Mapas</li>
         </ul>
     </div>
     <section class="cuerpo">
         <section class="cuerpo__section--menu">
-            <div class="menu">
-                <div class="simple--item"><a href="">
+            <div class="menu">                <!-- MENU -->
+                <div class="simple--item"><a href="../index.html">
                     <input type="button" id="item0">
                     <label class="simple--item-label" for="item0">INICIO</label></a>
                 </div>
@@ -32,28 +32,92 @@
                     <input type="checkbox" id="item1">
                     <label class="item-label" for="item1">AGENTES</label>
                     <div class="item-content">
-                    <a href="Apartados/TodosAg.html">Todos</a>
-                    <a href="Apartados/Centinelas/Centinelas.html">Centinelas</a>
-                    <a href="Apartados/Controladores/Controladores.html">Controladores</a>
-                    <a href="Apartados/Duelistas/Duelistas.html">Duelistas</a>
-                    <a href="Apartados/Iniciadores/Iniciadores.html">Iniciadores</a>
+                    <a href="TodosAg.html">Todos</a>
+                    <a href="Centinelas/Centinelas.html">Centinelas</a>
+                    <a href="Controladores/Controladores.html">Controladores</a>
+                    <a href="Duelistas/Duelistas.html">Duelistas</a>
+                    <a href="Iniciadores/Iniciadores.html">Iniciadores</a>
                     </div>
                 </div>
-                <div class="simple--item"><a href="Apartados/Mapas.html">
+                <div class="simple--item"><a href="Mapas.html">
                     <input type="button" id="item2">
                     <label class="simple--item-label" for="item2">MAPAS</label></a>
                 </div>
-                <div class="simple--item"><a href="Apartados/armas.html">
+                <div class="simple--item"><a href="armas.html">
                     <input type="button" id="item3">
                     <label class="simple--item-label" for="item3">ARMAS</label></a>
                 </div>
             </div>
+            <div class="menu2">                         <!-- MENU2 -->
+                <a href="../index.html"><button class="button-48" role="button"><span class="text">INICIO</span></button></a>
+                <a href="TodosAg.html"><button class="button-48" role="button"><span class="text">AGENTES</span></button></a>
+                <a href="Mapas.html"><button class="button-48" role="button"><span class="text">MAPAS</span></button></a>
+                <a href="armas.html"><button class="button-48" role="button"><span class="text">ARMAS</span></button></a>
+            </div>
         </section>
-        <section class="cuerpo__section--main">
+
+        <section class="cuerpo__section--main">                      <!-- MAIN -->
+            <section class="mapa--1">
+                <div class="nombre"><span>Ascent</span></div>
+                <div class="mapa"><img src="../Multimedia/mapas/mapa--1.png" width="100%" alt=""></div>
+                <div class="minimapa"><img src="../Multimedia/mapas/minimapa--1.png" width="60%" alt=""></div>
+            </section>
+            <section class="mapa--2">
+                <div class="nombre"><span>Bind</span></div>
+                <div class="mapa"><img src="../Multimedia/mapas/mapa--2.png" width="100%" alt=""></div>
+                <div class="minimapa"><img src="../Multimedia/mapas/minimapa--2.png" width="60%" alt=""></div>
+            </section>
+            <section class="mapa--3">
+                <div class="nombre"><span>Breeze</span></div>
+                <div class="mapa"><img src="../Multimedia/mapas/mapa--3.png" width="100%" alt=""></div>
+                <div class="minimapa"><img src="../Multimedia/mapas/minimapa--3.png" width="60%" alt=""></div>
+            </section>
+            <section class="mapa--4">
+                <div class="nombre"><span>Fracture</span></div>
+                <div class="mapa"><img src="../Multimedia/mapas/mapa--4.png" width="100%" alt=""></div>
+                <div class="minimapa"><img src="../Multimedia/mapas/minimapa--4.png" width="60%" alt=""></div>
+            </section>
+            <section class="mapa--5">
+                <div class="nombre"><span>Haven</span></div>
+                <div class="mapa"><img src="../Multimedia/mapas/mapa--5.png" width="100%" alt=""></div>
+                <div class="minimapa"><img src="../Multimedia/mapas/minimapa--5.png" width="60%" alt=""></div>
+            </section>
+            <section class="mapa--6">
+                <div class="nombre"><span>Icebox</span></div>
+                <div class="mapa"><img src="../Multimedia/mapas/mapa--6.png" width="100%" alt=""></div>
+                <div class="minimapa"><img src="../Multimedia/mapas/minimapa--6.png" width="60%" alt=""></div>
+            </section>
+            <section class="mapa--7">
+                <div class="nombre"><span>Split</span></div>
+                <div class="mapa"><img src="../Multimedia/mapas/mapa--7.png" width="100%" alt=""></div>
+                <div class="minimapa"><img src="../Multimedia/mapas/minimapa--7.png" width="60%" alt=""></div>
+            </section>
         </section>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+    </section>
+        <footer>                                            <!-- FOOTER -->
+            <section class="redes">
+                <div class="redes__span"><span>¡Nuestras redes!</span></div>
+                <div class="redes--twitter"><a href="https://twitter.com/TipzValo"><img src="../Multimedia/twitter.svg" height="100%" alt="twitter"></a></div>
+                <div class="redes--youtube"><a href="https://www.youtube.com/channel/UCOuTZ3AXsJfNEBeccIHbmfg/featured"><img src="../Multimedia/youtube.svg" height="100%" alt="youtube"></a></div>
+                <div class="redes--tiktok"><a href="https://www.tiktok.com/@valotipz"><img src="../Multimedia/tiktok.svg" height="100%" alt="tiktok"></a></div>
+            </section>
+            <section class="creador">
+                <div class="creador--valotipz"><img src="../Multimedia/valoTipzBlanco.png" width="70%" alt="valotipz"></div>
+                <div class="creador--x"><img src="../Multimedia/x.svg" height="50%" alt=""></div>
+                <div class="creador--valorant"><img src="../Multimedia/valorant.png" width="80%" alt=""></div>
+                <div class="creador__span"><span>Creado por Facundo Cufré</span></div>
+            </section>
+            <section class="derechos">
+                <div class="derechos--riot"><span>Todos los derechos del videojuego "Valorant" pertenecen a la empresa Riot games.</span></div>
+                <div class="derechos--valotipz"><span>ValoTipz es una página sin fines de lucro.</span></div>
+            </section>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

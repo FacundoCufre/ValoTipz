@@ -7,15 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 @import "SCSSparciales/Header";                     /*HEADER*/
+@import "SCSSparciales/footer";                     /*FOOTER*/
 
-@import "SCSSparciales/menu";
+@media screen and (min-width:768px) {
+    @import "SCSSparciales/menu";
 
-.cuerpo__section--menu{
-    height: auto;
-}
 .cuerpo{
     width: 100%;
-    height: auto;
+    height: 2140px;
     display: flex;
     flex-direction: row;
     background-color: $rojoClaro;
@@ -23,4 +22,87 @@
                                                      /*MAIN*/
 .cuerpo__section--main{
     width: 88%;
-    height: 100%;}
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @for $n from 1 through 7 {
+        .mapa--#{$n}{
+            height: 300px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            .nombre{
+                background-color: $grisOscuro;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 40px;
+                color: $blanco;
+                font-family: 'Bebas Neue', cursive;
+            }
+            .mapa{
+                background-color: $grisOscuro;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .minimapa{
+                background-color: $grisOscuro;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+}
+@media screen and (max-width:767px) {
+        @import "SCSSparciales/menu2";
+
+.cuerpo{
+    width: 100%;
+    height: 2100px;
+    display: flex;
+    flex-direction: column;
+    background-color: $rojoClaro;
+}
+                                                     /*MAIN*/
+.cuerpo__section--main{
+    width: 100%;
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    @for $n from 1 through 7 {
+        .mapa--#{$n}{
+            height: 300px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            .nombre{
+                background-color: $grisOscuro;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 40px;
+                color: $blanco;
+                font-family: 'Bebas Neue', cursive;
+            }
+            .mapa{
+                background-color: $grisOscuro;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .minimapa{
+                background-color: $grisOscuro;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+}
+

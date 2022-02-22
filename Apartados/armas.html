@@ -8,72 +8,143 @@
     <meta name="keywords" content="VALORANT, RIOT, SHOOTER, 5v5, CLASSIC, SHORTY, FRENZY, GHOST, SHERIFF, STINGER, SPECTRE, BUCKY, JUDGE, GUARDIAN, BULLDOG, VANDAL, PHANTOM, MARSHAL, OPERATOR, ODIN, ARES, FASE DE COMPRA, COMPRA, ARMAS">
     <title>Armas de Valorant</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/armas.css">
+    <link rel="stylesheet" href="../CSS/CSSextra/armas.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="encabezado">
-      <div class="encabezado__div">
-        <h1 data-aos="fade-right" class="encabezado__h1">ValoTipz</h1>
-      </div>
-    </header>
-    <nav id="barra-busq">                   <!-- MENU CON SUBMENU --->
-      <ul style="margin-bottom: 0;">
-        <li>
-          <a href="../index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="Agentes/TodosAg.html">Agentes</a>
-          <ul class="submenu">
-              <li><a href="Agentes/Centinelas/Centinelas.html">Centinelas</a></li>
-              <li><a href="Agentes/Iniciadores/Iniciadores.html">Iniciadores</a></li>
-              <li><a href="Agentes/Duelistas/Duelistas.html">Duelistas</a></li>
-              <li><a href="Agentes/Controladores/Controladores.html">Controladores</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Armas</a>
-        </li>
-        <li>
-          <a href="Mapas/TodosMaps.html">Mapas</a>
-          <ul class="submenu">
-            <li><a href="Mapas/Ascent.html">Ascent</a></li>
-            <li><a href="Mapas/Bind.html">Bind</a></li>
-            <li><a href="Mapas/Breeze.html">Breeze</a></li>
-            <li><a href="Mapas/Fracture.html">Fracture</a></li>
-            <li><a href="Mapas/Haven.html">Haven</a></li>
-            <li><a href="Mapas/Icebox.html">Icebox</a></li>
-            <li><a href="Mapas/Split.html">Split</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="armas container">
-      <section class="row armas__section">
-        <h2 class="col-xl-12 armas__h2">Armas</h2>
-        <div class="classic armas__div col-xs-12 col-md-4">Classic</div>
-        <div class="shorty armas__div col-xs-12 col-md-4">Shorty</div>
-        <div class="frenzy armas__div col-xs-12 col-md-4">Frenzy</div>
-        <div class="ghost armas__div col-xs-12 col-md-4">Ghost</div>
-        <div class="sheriff armas__div col-xs-12 col-md-4">Sheriff</div>
-        <div class="stinger armas__div col-xs-12 col-md-4">Stinger</div>
-        <div class="bucky armas__div col-xs-12 col-md-4">Bucky</div>
-        <div class="judge armas__div col-xs-12 col-md-4">Judge</div>
-        <div class="spectre armas__div col-xs-12 col-md-4">Spectre</div>
-        <div class="bulldog armas__div col-xs-12 col-md-4">Bulldog</div>
-        <div class="guardian armas__div col-xs-12 col-md-4">Guardian</div>
-        <div class="phantom armas__div col-xs-12 col-md-4">Phantom</div>
-        <div class="vandal armas__div col-xs-12 col-md-4">Vandal</div>
-        <div class="marshal armas__div col-xs-12 col-md-4">Marshal</div>
-        <div class="operator armas__div col-xs-12 col-md-4">Operator</div>
-        <div class="ares armas__div col-xs-12 col-md-4">Ares</div>
-        <div class="odin armas__div col-xs-12 col-md-4">Odin</div>
-        <div class="melee armas__div col-xs-12 col-md-4">Melee</div>
+  <header class="encabezado">                          <!-- ENCABEZADO -->
+    <div class="encabezado--logo"><img src="../Multimedia/valoTipzRojo.png" height="70%" alt="valotipz"></div>
+    <div class="contacto"><a href="contacto.html"><span>CONTÁCTANOS</span></a></div>
+  </header>
+<div class="historial">                               <!-- BREACRUMB -->
+    <ul class="historial--breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li>Armas</li>
+    </ul>
+</div>
+  <section class="cuerpo">
+    <section class="cuerpo__section--menu">                <!-- MENU -->
+        <div class="menu">
+            <div class="simple--item"><a href="../index.html">
+                <input type="button" id="item0">
+                <label class="simple--item-label" for="item0">INICIO</label></a>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="item1">
+                <label class="item-label" for="item1">AGENTES</label>
+                <div class="item-content">
+                <a href="TodosAg.html">Todos</a>
+                <a href="Centinelas/Centinelas.html">Centinelas</a>
+                <a href="Controladores/Controladores.html">Controladores</a>
+                <a href="Duelistas/Duelistas.html">Duelistas</a>
+                <a href="Iniciadores/Iniciadores.html">Iniciadores</a>
+                </div>
+            </div>
+            <div class="simple--item"><a href="Mapas.html">
+                <input type="button" id="item2">
+                <label class="simple--item-label" for="item2">MAPAS</label></a>
+            </div>
+            <div class="simple--item"><a href="">
+                <input type="button" id="item3">
+                <label class="simple--item-label" for="item3">ARMAS</label></a>
+            </div>
+        </div>
+        <div class="menu2">                         <!-- MENU2 -->
+            <a href="../index.html"><button class="button-48" role="button"><span class="text">INICIO</span></button></a>
+            <a href="TodosAg.html"><button class="button-48" role="button"><span class="text">AGENTES</span></button></a>
+            <a href="Mapas.html"><button class="button-48" role="button"><span class="text">MAPAS</span></button></a>
+            <a href="armas.html"><button class="button-48" role="button"><span class="text">ARMAS</span></button></a>
+        </div>
+    </section>
+    <section class="cuerpo__section--main">           <!-- ARMAS -->
+      <section class="armas container-fluid row" style="padding: 0; margin: 0;">
+        <div class="arma--span col-12"><span>ARMAS DE MANO</span></div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/melee.png" width="90%" alt="MELEE"></div>
+        <div class="nombre col-6 col-md-4">MELEE</div>
+        <div class="precio col-0 col-md-4">0 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/classic.png" width="90%" alt="CLASSIC"></div>
+        <div class="nombre col-6 col-md-4"><span>CLASSIC</span></div>
+        <div class="precio col-sm-0 col-md-4">0 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/shorty.png" width="90%" alt="SHORTY"></div>
+        <div class="nombre col-6 col-md-4">SHORTY</div>
+        <div class="precio col-0 col-md-4">150 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/frenzy.png" width="90%" alt="FRENZY"></div>
+        <div class="nombre col-6 col-md-4"><span>FRENZY</span></div>
+        <div class="precio col-0 col-md-4">450 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/ghost.png" width="90%" alt="GHOST"></div>
+        <div class="nombre col-6 col-md-4">GHOST</div>
+        <div class="precio col-0 col-md-4">500 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/sheriff.png" width="90%" alt="SHERIFF"></div>
+        <div class="nombre col-6 col-md-4">SHERIFF</div>
+        <div class="precio col-0 col-md-4">800 CRÉDITOS</div>
+
+        <div class="arma--span col-12"><span>SUBFUSILES</span></div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/stinger.png" width="90%" alt="STINGER"></div>
+        <div class="nombre col-6 col-md-4"><span>STINGER</span></div>
+        <div class="precio col-0 col-md-4">950 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/spectre.png" width="90%" alt="SPECTRE"></div>
+        <div class="nombre col-6 col-md-4">SPECTRE</div>
+        <div class="precio col-0 col-md-4">1600 CRÉDITOS</div>
+
+        <div class="arma--span col-12"><span>ESCOPETAS</span></div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/bucky.png" width="90%" alt="BUCKY"></div>
+        <div class="nombre col-6 col-md-4"><span>BUCKY</span></div>
+        <div class="precio col-0 col-md-4">950 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/judge.png" width="90%" alt="JUDGE"></div>
+        <div class="nombre col-6 col-md-4">JUDGE</div>
+        <div class="precio col-0 col-md-4">1800 CRÉDITOS</div>
+
+        <div class="arma--span col-12"><span>FUSILES</span></div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/bulldog.png" width="90%" alt="BULLDOG"></div>
+        <div class="nombre col-6 col-md-4"><span>BULLDOG</span></div>
+        <div class="precio col-0 col-md-4">2000 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/guardian.png" width="90%" alt="GUARDIAN"></div>
+        <div class="nombre col-6 col-md-4">GUARDIAN</div>
+        <div class="precio col-0 col-md-4">2150 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/phantom.png" width="90%" alt="PHANTOM"></div>
+        <div class="nombre col-6 col-md-4"><span>PHANTOM</span></div>
+        <div class="precio col-0 col-md-4">2900 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/vandal.png" width="90%" alt="VANDAL"></div>
+        <div class="nombre col-6 col-md-4">VANDAL</div>
+        <div class="precio col-0 col-md-4">2900 CRÉDITOS</div>
+
+        <div class="arma--span col-12"><span>FRANCOTIRADORES</span></div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/marshal.png" width="90%" alt="MARSHAL"></div>
+        <div class="nombre col-6 col-md-4"><span>MARSHAL</span></div>
+        <div class="precio col-0 col-md-4">950 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/operator.png" width="90%" alt="OPERATOR"></div>
+        <div class="nombre col-6 col-md-4">OPERATOR</div>
+        <div class="precio col-0 col-md-4">4700 CRÉDITOS</div>
+
+        <div class="arma--span col-12"><span>PESADAS</span></div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/ares.png" width="90%" alt="ARES"></div>
+        <div class="nombre col-6 col-md-4"><span>ARES</span></div>
+        <div class="precio col-0 col-md-4">1600 CRÉDITOS</div>
+        <div class="arma col-6 col-md-4"><img src="../Multimedia/armas/odin.png" width="90%" alt="ODIN"></div>
+        <div class="nombre col-6 col-md-4">ODIN</div>
+        <div class="precio col-0 col-md-4">3200 CRÉDITOS</div>
+
       </section>
-    </div>
+    </section>
+  </section>
+  <footer>                                            <!-- FOOTER -->
+      <section class="redes">
+          <div class="redes__span"><span>¡Nuestras redes!</span></div>
+          <div class="redes--twitter"><a href="https://twitter.com/TipzValo"><img src="../Multimedia/twitter.svg" height="100%" alt="twitter"></a></div>
+          <div class="redes--youtube"><a href="https://www.youtube.com/channel/UCOuTZ3AXsJfNEBeccIHbmfg/featured"><img src="../Multimedia/youtube.svg" height="100%" alt="youtube"></a></div>
+          <div class="redes--tiktok"><a href="https://www.tiktok.com/@valotipz"><img src="../Multimedia/tiktok.svg" height="100%" alt="tiktok"></a></div>
+      </section>
+      <section class="creador">
+          <div class="creador--valotipz"><img src="../Multimedia/valoTipzBlanco.png" width="70%" alt="valotipz"></div>
+          <div class="creador--x"><img src="../Multimedia/x.svg" height="50%" alt=""></div>
+          <div class="creador--valorant"><img src="../Multimedia/valorant.png" width="80%" alt=""></div>
+          <div class="creador__span"><span>Creado por Facundo Cufré</span></div>
+      </section>
+      <section class="derechos">
+          <div class="derechos--riot"><span>Todos los derechos del videojuego "Valorant" pertenecen a la empresa Riot games.</span></div>
+          <div class="derechos--valotipz"><span>ValoTipz es una página sin fines de lucro.</span></div>
+      </section>
+  </footer>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();

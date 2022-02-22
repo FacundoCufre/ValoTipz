@@ -7,15 +7,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 @import "SCSSparciales/Header";                     /*HEADER*/
+@import "SCSSparciales/footer";
+
+@media screen and(min-width:1024px) {                    /*MAYOR A 1024px*/
+    
+
 
 @import "SCSSparciales/menu";
-
-.cuerpo__section--menu{
-    height: auto;
-}
 .cuerpo{
     width: 100%;
-    height: auto;
+    height: 800px;
     display: flex;
     flex-direction: row;
     background-color: $rojoClaro;
@@ -83,4 +84,157 @@
             }
         }
     }
+}
+}
+@media screen and (min-width:800px) and (max-width:1023px){                    /*MAYOR A 800px*/
+    .cuerpo{
+        width: 100%;
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        background-color: $rojoClaro;
+    }
+                                                         /*MAIN*/
+    .cuerpo__section--main{
+        width: 100%;
+        height: 94%;
+        .titulo{
+            width: 100%;
+            height: 200px;
+            color: black;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 50px;
+            text-align: center;
+            padding: 60px;
+            background-color: $rojoFuerte;
+        }
+        .main--agentes{
+            display: grid;
+            height: auto;
+            width: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 200px 200px 200px;
+            a{
+                width: 100%;
+                text-decoration: none;
+                color: $negro;
+                font-family: 'Inconsolata', monospace;
+                background-color: $blanco;
+            }
+            a:hover{
+                background-color: $rojoClaro;
+            }
+            .agente{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 50% 50%;
+                .img{
+                    grid-column: 1/2;
+                    grid-row: 1/3;
+                    background-color: $grisOscuro;
+                }
+                .nombre{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    font-size: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    border-right: 1px $grisClaro solid;
+                    border-top: 1px $grisClaro solid;
+                }
+                .rol{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    font-size: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-right: 1px $grisClaro solid;
+                    border-top: 1px $grisClaro solid;
+                }
+            }
+        }
+    }
+    @import "SCSSparciales/menu2";
+}
+
+
+@media screen and (max-width:799px){                    /*MENOR A 800px*/
+    .cuerpo{
+        width: 100%;
+        height: 980px;
+        display: flex;
+        flex-direction: column;
+        background-color: $rojoClaro;
+    }
+                                                         /*MAIN*/
+    .cuerpo__section--main{
+        width: 100%;
+        height: 94%;
+        .titulo{
+            width: 100%;
+            height: 200px;
+            color: black;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 50px;
+            text-align: center;
+            padding: 60px;
+            background-color: $rojoFuerte;
+        }
+        .main--agentes{
+            display: flex;
+            height: auto;
+            flex-direction: column;
+            width: 100%;
+            a{
+                width: 100%;
+                height: 120px;
+                text-decoration: none;
+                color: $negro;
+                font-family: 'Inconsolata', monospace;
+                background-color: $blanco;
+            }
+            a:hover{
+                background-color: $rojoClaro;
+            }
+            .agente{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 50% 50%;
+                .img{
+                    grid-column: 1/2;
+                    grid-row: 1/3;
+                    background-color: $grisOscuro;
+                }
+                .nombre{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    font-size: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    border-right: 1px $grisClaro solid;
+                    border-top: 1px $grisClaro solid;
+                }
+                .rol{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    font-size: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-right: 1px $grisClaro solid;
+                    border-top: 1px $grisClaro solid;
+                }
+            }
+        }
+    }
+    @import "SCSSparciales/menu2";
 }

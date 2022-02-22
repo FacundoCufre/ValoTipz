@@ -1,116 +1,114 @@
-@import "SCSSparciales/headerMenu";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
-.armas{
-    .armas__section{
-        padding: 0;
-        margin: 0;
-        height: 1500px;
-        width: 100%
+@import "SCSSparciales/Header";                     /*HEADER*/
+@import "SCSSparciales/footer";                     /*FOOTER*/
+
+
+@media screen and (min-width:768px) {                               /*MAYOR A 768px*/
+
+.cuerpo{
+    width: 100%;
+    height: 3840px;
+    display: flex;
+    flex-direction: row;
+    background-color: $rojoClaro;
+}
+                                                     /*MAIN*/
+.cuerpo__section--main{
+    width: 88%;
+    height: 100%;
+}
+@import "SCSSparciales/menu";
+.arma{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.arma--span{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $blanco;
+    background-color: $negro;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+}
+.nombre{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-color: $blanco;
+    font-size: 40px;
+    border-left: 1px solid $negro;
+}
+.precio{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-color: $blanco;
+    font-size: 40px;
+}
+}
+
+@media screen and (max-width:767px) {                               /*MENOR A 768px*/
+    .cuerpo{
+        width: 100%;
+        height: 4085px;
+        display: flex;
+        flex-direction: column;
+        background-color: $rojoClaro;
     }
-    .armas__h2{
-        height: 150px;
-        line-height: 150px;
+    .cuerpo__section--main{
+        width: 100%;
+        height: 94%;
+    }
+    @import "SCSSparciales/menu2";
+    .arma{
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .arma--span{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         color: $blanco;
-        background-color: black;
+        background-color: $negro;
+        font-size: 50px;
+        font-family: 'Bebas Neue', cursive;
     }
-    .armas__div{                      
+    .nombre{
         height: 180px;
-        background-color: $rojoFuerte;
-        padding:0;
-        margin: 0;
-        font-size: 0;
-        border: 2px solid $blanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: black;
+        background-color: $blanco;
+        font-size: 40px;
+        border-left: 1px solid $negro;
     }
-}
-.classic{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/classic.jpeg);
-    
-}
-.shorty{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/shorty.jpeg)
-}
-.frenzy{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/frenzy.jpeg)
-}
-.ghost{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/ghost.jpeg)
-}
-.sheriff{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/sheriff.jpeg)
-}
-.stinger{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/stinger.jpeg)
-}
-.spectre{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/spectre.jpeg)
-}
-.bucky{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/bucky.jpeg)
-}
-.judge{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/judge.jpeg)
-}
-.bulldog{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/bulldog.jpeg)
-}
-.guardian{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/guardian.jpeg)
-}
-.phantom{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/phantom.jpeg)
-}
-.vandal{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/vandal.jpeg)
-}
-.marshal{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/marshal.jpeg)
-}
-.operator{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/operator.jpeg)
-}
-.ares{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/ares.jpeg)
-}
-.odin{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/odin.jpeg)
-}
-.melee{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../Multimedia/armas/melee.jpeg)
+    .precio{
+        display: none;
+    }
 }

@@ -28,50 +28,24 @@ $grisClaro: #494747;
         justify-content: left;
         align-items: center;
     }
-    .encabezado--derecha{
+    .contacto{
         height: 100%;
         width: 20%;
+        text-decoration: none;
+        color: $blanco;
+        text-align: center;
         display: flex;
-        flex-direction: column;
-        .contacto{
-            height: 50%;
-            width: 100%;
-            text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: $grisOscuro;
+        a{
             color: $blanco;
+            height: 100%;
+            width: 100%;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $grisOscuro;
-            a{
-                color: $blanco;
-                height: 100%;
-                width: 100%;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        .mapa{
-            height: 50%;
-            width: 100%;
-            text-decoration: none;
-            color: $blanco;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $grisOscuro;
-            a{
-                height: 100%;
-                width: 100%;
-                color: $blanco;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
         }
     }
 }
@@ -124,50 +98,24 @@ ul.historial--breadcrumb li a:hover {
             justify-content: center;
             align-items: center;
         }
-        .encabezado--derecha{
+        .contacto{
             height: 10%;
             width: 100%;
+            text-decoration: none;
+            color: $blanco;
+            text-align: center;
             display: flex;
-            flex-direction: row;
-            .contacto{
-                height: 100%;
-                width: 50%;
-                text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            background-color: $grisOscuro;
+            a{
                 color: $blanco;
+                height: 100%;
+                width: 100%;
                 text-align: center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: $grisOscuro;
-                a{
-                    color: $blanco;
-                    height: 100%;
-                    width: 100%;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-            .mapa{
-                height: 100%;
-                width: 50%;
-                text-decoration: none;
-                color: $blanco;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: $grisOscuro;
-                a{
-                    height: 100%;
-                    width: 100%;
-                    color: $blanco;
-                    text-align: center;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
             }
         }
     }
