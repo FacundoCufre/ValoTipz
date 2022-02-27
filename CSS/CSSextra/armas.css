@@ -419,6 +419,8 @@ footer .derechos .derechos--valotipz {
   }
 
   .menu {
+    position: sticky;
+    top: 50px;
     overflow: hidden;
     align-items: center;
     width: 80%;
@@ -514,6 +516,18 @@ footer .derechos .derechos--valotipz {
   }
   input:checked ~ .item-content a:hover {
     color: #bb3732;
+  }
+
+  .subir {
+    height: 100%;
+    width: 100%;
+    color: #1b1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .arma {

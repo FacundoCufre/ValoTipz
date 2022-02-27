@@ -404,6 +404,8 @@ footer .derechos .derechos--valotipz {
   }
 
   .menu {
+    position: sticky;
+    top: 50px;
     overflow: hidden;
     align-items: center;
     width: 80%;
@@ -501,9 +503,21 @@ footer .derechos .derechos--valotipz {
     color: #bb3732;
   }
 
+  .subir {
+    height: 100%;
+    width: 100%;
+    color: #1b1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
   .cuerpo {
     width: 100%;
-    height: 800px;
+    height: 650px;
     display: flex;
     flex-direction: row;
     background-color: #bb3732;
@@ -529,7 +543,7 @@ footer .derechos .derechos--valotipz {
     height: auto;
     width: 100%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px;
   }
   .cuerpo__section--main .main--agentes a {
     text-decoration: none;
@@ -544,7 +558,7 @@ footer .derechos .derechos--valotipz {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 50% 50%;
   }
   .cuerpo__section--main .main--agentes .agente .img {

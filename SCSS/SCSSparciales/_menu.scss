@@ -20,6 +20,8 @@ input {
     z-index: -1;
 }
 .menu {
+    position: sticky;
+    top: 50px;
     overflow: hidden;
     align-items: center;
     width: 80%;
@@ -114,4 +116,15 @@ input:checked {
             color: $rojoClaro;
         }
     }
+}
+.subir{
+    height: 100%;
+    width: 100%;
+    color: $negro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
 }

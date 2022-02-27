@@ -621,6 +621,8 @@ footer .derechos .derechos--valotipz {
   }
 
   .menu {
+    position: sticky;
+    top: 50px;
     overflow: hidden;
     align-items: center;
     width: 80%;
